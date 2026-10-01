@@ -37,7 +37,7 @@ Servidor de mídia local em Flask, com catálogo enriquecido pelo TMDB, reprodu�
            └── S01E02 - Segundo episódio.mp4
    ```
 
-4. Cole a chave nova do TMDB em `TMDB_API_KEY`. Ela é opcional: sem chave, o catálogo ainda aparece, mas sem capas e sinopses online.
+4. Cole a chave nova do TMDB em `TMDB_API_KEY` e altere `TMDB_ENABLED=true` quando quiser capas e sinopses online. O TMDB fica desligado por padrão para o catálogo não travar quando a internet ou a API estiver indisponível.
 
 ## Execução
 

@@ -1,5 +1,6 @@
 import os
 import re
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import requests
@@ -8,6 +9,7 @@ from dotenv import load_dotenv
 # Carrega as variáveis do arquivo .env
 load_dotenv()
 TMDB_API_KEY = os.getenv("TMDB_API_KEY")
+TMDB_ENABLED = os.getenv("TMDB_ENABLED", "false").lower() == "true"
 MEDIA_PATH = Path(os.getenv("MEDIA_PATH")) if os.getenv("MEDIA_PATH") else Path("./media")
 TMDB_BASE_URL = "https://api.themoviedb.org/3"
 IMG_BASE_URL = "https://image.tmdb.org/t/p/w500"
@@ -24,12 +26,25 @@ def _nome_do_episodio(nome_arquivo):
     nome = re.sub(r"[._-]+", " ", nome).strip()
     return nome or "Episódio"
 
+
+def _buscar_metadados_em_paralelo(tarefas):
+    if not tarefas:
+        return []
+
+    with ThreadPoolExecutor(max_workers=min(6, len(tarefas))) as executor:
+        futuros = [
+            executor.submit(buscar_dados_tmdb, titulo, tipo)
+            for titulo, tipo in tarefas
+        ]
+        return [futuro.result() for futuro in futuros]
+
+
 def buscar_dados_tmdb(titulo, tipo="movie"):
     """
     Consulta a API do TMDB. 
     tipo: 'movie' para filmes, 'tv' para séries.
     """
-    if not TMDB_API_KEY:
+    if not TMDB_ENABLED or not TMDB_API_KEY:
         return {"sinopse": "API Key não configurada", "capa": None, "titulo_oficial": titulo}
 
     url = f"{TMDB_BASE_URL}/search/{tipo}"
@@ -37,7 +52,7 @@ def buscar_dados_tmdb(titulo, tipo="movie"):
         resposta = requests.get(
             url,
             params={"api_key": TMDB_API_KEY, "query": titulo, "language": "pt-BR"},
-            timeout=10,
+            timeout=5,
         )
         resposta.raise_for_status()
         dados = resposta.json()
@@ -61,6 +76,8 @@ def escanear_midias():
     if not MEDIA_PATH.exists():
         return catalogo
 
+    filmes_pendentes = []
+
     # Escaneia Filmes
     pasta_filmes = MEDIA_PATH / "Filmes"
     if pasta_filmes.exists():
@@ -75,14 +92,20 @@ def escanear_midias():
                     nome_filme = pasta.name # Ex: Aposta de Alto Risco 2026
                     # Removemos o ano (ex: 2026) temporariamente para melhorar a busca na API
                     nome_limpo = re.sub(r'\s\d{4}$', '', nome_filme)
-                    dados = buscar_dados_tmdb(nome_limpo, tipo="movie")
-                    catalogo["filmes"].append({
-                        "id": pasta.name,
-                        "media_id": _id_da_midia(videos[0]),
-                        **dados
-                    })
+                    filmes_pendentes.append((pasta, videos[0], nome_limpo))
+
+    dados_filmes = _buscar_metadados_em_paralelo(
+        [(nome_limpo, "movie") for _, _, nome_limpo in filmes_pendentes]
+    )
+    for (pasta, video, _), dados in zip(filmes_pendentes, dados_filmes):
+        catalogo["filmes"].append({
+            "id": pasta.name,
+            "media_id": _id_da_midia(video),
+            **dados
+        })
 
     # Escaneia Séries
+    series_pendentes = {}
     pasta_series = MEDIA_PATH / "Series"
     if pasta_series.exists():
         for pasta_serie in sorted(pasta_series.iterdir(), key=lambda item: item.name.lower()):
@@ -92,10 +115,8 @@ def escanear_midias():
                 nome_busca = re.sub(r'\s-\s.*|\s\d+ª\sTemporada', '', nome_serie_completo)
 
                 if nome_busca not in catalogo["series"]:
-                    catalogo["series"][nome_busca] = {
-                        **buscar_dados_tmdb(nome_busca, tipo="tv"),
-                        "episodios": []
-                    }
+                    catalogo["series"][nome_busca] = {"episodios": []}
+                    series_pendentes[nome_busca] = (nome_busca, "tv")
 
                 # Extrai temporadas e episódios (ex: S02E01.mkv)
                 for ep_file in sorted(pasta_serie.iterdir(), key=lambda item: item.name.lower()):
@@ -113,6 +134,10 @@ def escanear_midias():
                 catalogo["series"][nome_busca]["episodios"].sort(
                     key=lambda episodio: (episodio["temporada"], episodio["episodio"])
                 )
+
+    dados_series = _buscar_metadados_em_paralelo(list(series_pendentes.values()))
+    for nome_serie, dados in zip(series_pendentes, dados_series):
+        catalogo["series"][nome_serie].update(dados)
 
     catalogo["filmes"].sort(key=lambda filme: filme["titulo_oficial"].lower())
 
