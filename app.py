@@ -113,4 +113,5 @@ def enviar_para_chromecast():
 
 if __name__ == '__main__':
     # host='0.0.0.0' permite que a TV e o celular acessem o servidor
-    app.run(host='0.0.0.0', port=5000, debug=os.getenv('FLASK_DEBUG', '').lower() == 'true')
+    port = int(os.getenv('PORT', '5001'))
+    app.run(host='0.0.0.0', port=port, debug=os.getenv('FLASK_DEBUG', '').lower() == 'true')
