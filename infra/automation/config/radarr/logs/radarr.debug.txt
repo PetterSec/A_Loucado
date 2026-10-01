@@ -2092,3 +2092,9 @@
 2026-10-01 16:33:20.2|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
 2026-10-01 16:33:20.3|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (2 ms)
 2026-10-01 16:33:50.1|Debug|Api|[GET] /api/v3/command: 200.OK (2 ms)
+2026-10-01 16:34:50.2|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (6 ms)
+2026-10-01 16:34:50.2|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (2 ms)
+2026-10-01 16:34:50.2|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2026-10-01 16:34:50.2|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2026-10-01 16:35:20.1|Debug|ImportListSyncService|No enabled import lists, skipping sync and cleaning
+2026-10-01 16:35:20.1|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)

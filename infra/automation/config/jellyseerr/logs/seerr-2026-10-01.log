@@ -115,3 +115,8 @@
 2026-10-01T19:30:00.022Z [info][Jellyfin Sync]: Beginning to process recently added for library: Filmes 
 2026-10-01T19:30:04.196Z [info][Jellyfin Sync]: Beginning to process recently added for library: Séries 
 2026-10-01T19:30:08.359Z [info][Jellyfin Sync]: Recently Added Scan Complete 
+2026-10-01T19:35:00.009Z [info][Jobs]: Starting scheduled job: Jellyfin Recently Added Scan 
+2026-10-01T19:35:00.011Z [info][Jellyfin Sync]: Scan starting {"sessionId":"073d7b8e-3722-43a5-88e5-e5ece4ed148d"}
+2026-10-01T19:35:00.027Z [info][Jellyfin Sync]: Beginning to process recently added for library: Filmes 
+2026-10-01T19:35:04.236Z [info][Jellyfin Sync]: Beginning to process recently added for library: Séries 
+2026-10-01T19:35:08.378Z [info][Jellyfin Sync]: Recently Added Scan Complete 

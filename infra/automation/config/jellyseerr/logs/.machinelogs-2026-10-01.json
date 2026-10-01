@@ -160,3 +160,8 @@
 {"label":"Jellyfin Sync","level":"info","message":"Beginning to process recently added for library: Filmes","timestamp":"2026-10-01T19:30:00.022Z"}
 {"label":"Jellyfin Sync","level":"info","message":"Beginning to process recently added for library: Séries","timestamp":"2026-10-01T19:30:04.196Z"}
 {"label":"Jellyfin Sync","level":"info","message":"Recently Added Scan Complete","timestamp":"2026-10-01T19:30:08.359Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Jellyfin Recently Added Scan","timestamp":"2026-10-01T19:35:00.009Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Scan starting","sessionId":"073d7b8e-3722-43a5-88e5-e5ece4ed148d","timestamp":"2026-10-01T19:35:00.011Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Beginning to process recently added for library: Filmes","timestamp":"2026-10-01T19:35:00.027Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Beginning to process recently added for library: Séries","timestamp":"2026-10-01T19:35:04.236Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Recently Added Scan Complete","timestamp":"2026-10-01T19:35:08.378Z"}
