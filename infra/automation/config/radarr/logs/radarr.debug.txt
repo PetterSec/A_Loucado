@@ -1064,3 +1064,4 @@
 2026-10-01 03:48:58.5|Debug|Radarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
 2026-10-01 03:49:23.4|Debug|Radarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
 2026-10-01 03:50:02.4|Debug|Radarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2026-10-01 03:54:26.5|Debug|ImportListSyncService|No enabled import lists, skipping sync and cleaning
