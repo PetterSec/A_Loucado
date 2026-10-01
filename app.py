@@ -41,6 +41,7 @@ def stream_video():
         return "Arquivo não encontrado", 404
     return send_file(caminho, conditional=True)
 @app.route('/play')
+
 def play_video():
     """Rota para o web player nativo."""
     caminho = request.args.get('path')
@@ -49,6 +50,7 @@ def play_video():
     # Envia o caminho para a nova página do player HTML
     return render_template('player.html', video_path=caminho)
 @app.route('/cast', methods=['POST'])
+
 def enviar_para_chromecast():
     dados = request.json
     caminho_video = dados.get('path')
