@@ -1,23 +1,70 @@
-# 🍿 A Loucadoura - Servidor de Mídia Local
+# A Loucadoura
 
-Um servidor de streaming caseiro (estilo Netflix) leve, construído em Python, com integração ao TMDB para enriquecimento de metadados e suporte nativo ao Google Chromecast via rede local.
+Servidor de mídia local em Flask, com catálogo enriquecido pelo TMDB, reprodução no navegador e envio para Chromecast.
 
-## 🚀 Arquitetura e Boas Práticas Adotadas
-* **Flask Server:** Utilizado para servir o frontend e atuar como servidor de arquivos estáticos (vídeos) através de requisições parciais (`conditional=True`), permitindo buffer e avanço/recuo de tempo na reprodução.
-* **Isolamento de Credenciais:** Uso de arquivo `.env` para garantir que a API Key do TMDB não seja exposta caso o projeto vá para o GitHub.
-* **Desempenho (Máquinas Leves):** Implementação de cache em memória no dicionário do Python para o catálogo. A leitura do disco (I/O) e as chamadas de API são feitas apenas no primeiro acesso, aliviando o processamento.
-* **Execução Nativa:** Optamos por `venv` ao invés de Docker para facilitar o mDNS (descoberta do Chromecast na rede) e não sobrecarregar a CPU.
+## Requisitos
 
-## 🛠️ Como Executar
+- Python 3.11 ou mais recente
+- `ffmpeg` não é necessário para o teste inicial, mas será necessário quando adicionarmos transcodificação
+- A máquina do servidor e o Chromecast na mesma rede local
 
-1. Crie seu ambiente virtual: `python3 -m venv venv`
-2. Ative-o: `source venv/bin/activate`
-3. Instale as dependências: `pip install -r requirements.txt` *(ou pip install flask python-dotenv requests pychromecast)*
-4. Renomeie o arquivo de exemplo para `.env` e insira sua chave do TMDB e o caminho da pasta de mídia.
-5. Inicie o servidor: `python app.py`
-6. Abra o navegador em `http://localhost:5000` (ou acesse o IP da máquina pelo celular).
+## Configuração
 
-## 🔮 Próximos Passos (To-Do)
-- [ ] Adicionar suporte a legendas externas (.srt).
-- [ ] Criar controles de play/pause/volume diretamente na interface web usando `pychromecast`.
-- [ ] Implementar banco de dados SQLite para salvar progresso ("Continuar assistindo").
+1. Crie e ative o ambiente virtual:
+
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
+   ```
+
+2. Crie o arquivo `.env` a partir do exemplo:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+3. Preencha `MEDIA_PATH` com a pasta raiz da sua biblioteca. Ela deve ter esta estrutura:
+
+   ```text
+   A Loucadoura/
+   ├── Filmes/
+   │   └── Nome do Filme 2024/
+   │       └── filme.mp4
+   └── Series/
+       └── Nome da Série - 1ª Temporada/
+           ├── S01E01 - Piloto.mp4
+           └── S01E02 - Segundo episódio.mp4
+   ```
+
+4. Cole a chave nova do TMDB em `TMDB_API_KEY`. Ela é opcional: sem chave, o catálogo ainda aparece, mas sem capas e sinopses online.
+
+## Execução
+
+```bash
+source venv/bin/activate
+python app.py
+```
+
+Abra `http://localhost:5000` no computador ou use o IP da máquina em outro dispositivo da rede.
+
+O botão **Atualizar catálogo** refaz a leitura das pastas e consulta os metadados novamente.
+
+## Segurança
+
+- Nunca versione `.env` ou coloque a chave da API no código.
+- As rotas de reprodução aceitam apenas IDs relativos de arquivos de vídeo dentro de `MEDIA_PATH`.
+- Para uso fora da rede doméstica, adicione autenticação e HTTPS antes de expor a aplicação.
+
+## Limitações atuais
+
+- Navegadores e Chromecast podem não reproduzir todos os codecs de `.mkv` e `.avi` diretamente.
+- O Chromecast atualmente usa o primeiro dispositivo encontrado.
+- Ainda não há legendas, progresso salvo ou transcodificação automática.
+
+## Próximas melhorias
+
+1. Transcodificação com FFmpeg quando o formato não for compatível.
+2. Banco SQLite para progresso e histórico.
+3. Legendas externas `.srt`.
+4. Seleção e controles completos do Chromecast.

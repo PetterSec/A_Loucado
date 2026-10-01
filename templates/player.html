@@ -16,7 +16,7 @@
     <!-- O Player de Vídeo HTML5 -->
     <video controls autoplay class="w-100 h-100 shadow" style="max-height: 100vh; background: #000; outline: none;">
         <!-- Aponta para a rota /stream passando o caminho do arquivo -->
-        <source src="/stream?path={{ video_path }}" type="video/mp4">
+        <source src="{{ url_for('stream_video', media_id=media_id) }}" type="video/mp4">
         Seu navegador não suporta a reprodução deste vídeo.
     </video>
 

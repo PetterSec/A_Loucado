@@ -11,7 +11,12 @@
 </head>
 <body class="bg-black">
 <div class="container py-5">
-    <h1 class="text-center mb-5 text-danger fw-bold">A Loucadoura</h1>
+    <div class="d-flex justify-content-between align-items-center mb-5 gap-3">
+        <h1 class="text-danger fw-bold mb-0">A Loucadoura</h1>
+        <button class="btn btn-outline-light" type="button" onclick="atualizarCatalogo()">
+            Atualizar catálogo
+        </button>
+    </div>
 
     <!-- FILMES -->
     <h2 class="mb-4 border-bottom border-secondary pb-2">Filmes</h2>
@@ -26,10 +31,10 @@
                     
                     <div class="mt-auto">
                         <div class="d-grid gap-2">
-                            <a href="/play?path={{ filme.caminho }}" class="btn btn-danger">
+                            <a href="{{ url_for('play_video', media_id=filme.media_id) }}" class="btn btn-danger">
                                 ▶️ Assistir no PC
                             </a>
-                            <button class="btn btn-outline-light" onclick="castMedia('{{ filme.caminho }}')">
+                            <button class="btn btn-outline-light" onclick='castMedia({{ filme.media_id|tojson }})'>
                                 📺 Cast TV
                             </button>
                         </div>
@@ -55,7 +60,7 @@
                         <select class="form-select bg-dark text-light border-secondary mt-3 mb-3" id="select-{{ loop.index }}">
                             <option selected disabled>Escolha o Episódio</option>
                             {% for ep in dados.episodios %}
-                                <option value="{{ ep.caminho }}">T{{ ep.temporada }}E{{ ep.episodio }} - {{ ep.titulo }}</option>
+                                <option value="{{ ep.media_id }}">T{{ '%02d'|format(ep.temporada) }}E{{ '%02d'|format(ep.episodio) }} - {{ ep.titulo }}</option>
                             {% endfor %}
                         </select>
                         
@@ -76,11 +81,11 @@
 </div>
 
 <script>
-    function castMedia(path) {
+    function castMedia(mediaId) {
         fetch('/cast', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ path: path })
+            body: JSON.stringify({ media_id: mediaId })
         })
         .then(response => response.json())
         .then(data => alert(data.msg))
@@ -88,9 +93,9 @@
     }
 
     function castSeries(selectId) {
-        const path = document.getElementById(selectId).value;
-        if(path && path !== "Escolha o Episódio") {
-            castMedia(path);
+        const mediaId = document.getElementById(selectId).value;
+        if(mediaId) {
+            castMedia(mediaId);
         } else {
             alert("Por favor, selecione um episódio primeiro.");
         }
@@ -98,12 +103,19 @@
 
     function playSeriesLocally(selectId) {
         const select = document.getElementById(selectId);
-        const path = select.value;
-        if(path && path !== "Escolha o Episódio") {
-            window.location.href = "/play?path=" + encodeURIComponent(path);
+        const mediaId = select.value;
+        if(mediaId) {
+            window.location.href = "{{ url_for('play_video') }}?media_id=" + encodeURIComponent(mediaId);
         } else {
             alert("Por favor, selecione um episódio primeiro.");
         }
+    }
+
+    function atualizarCatalogo() {
+        fetch('{{ url_for("atualizar_catalogo") }}', { method: 'POST' })
+            .then(response => response.json())
+            .then(() => window.location.reload())
+            .catch(() => alert('Não foi possível atualizar o catálogo.'));
     }
 </script>
 </body>
