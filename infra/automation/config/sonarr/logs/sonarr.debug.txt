@@ -1590,3 +1590,4 @@
 2026-10-01 03:49:11.2|Info|Microsoft.Hosting.Lifetime|Content root path: /app/sonarr/bin
 2026-10-01 03:49:23.7|Debug|Sonarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
 2026-10-01 03:50:02.5|Debug|Sonarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2026-10-01 03:54:40.8|Debug|ImportListSyncService|No import lists with automatic add enabled
