@@ -4,8 +4,8 @@
   <SslPort>9898</SslPort>
   <EnableSsl>False</EnableSsl>
   <LaunchBrowser>True</LaunchBrowser>
-  <ApiKey>54519dbba8a0444592a6c78a45d5979a</ApiKey>
-  <AuthenticationMethod>None</AuthenticationMethod>
+  <ApiKey>fe346dc31d364713a6f8b5792b152b46</ApiKey>
+  <AuthenticationMethod>Forms</AuthenticationMethod>
   <AuthenticationRequired>Enabled</AuthenticationRequired>
   <AllowedHosts></AllowedHosts>
   <Branch>main</Branch>

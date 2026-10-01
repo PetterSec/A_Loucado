@@ -393,3 +393,222 @@
 2026-10-01 03:48:57.0|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
 2026-10-01 03:49:24.4|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
 2026-10-01 03:50:02.4|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2026-10-01 03:56:20.0|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2026-10-01 03:56:20.5|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2026-10-01 03:56:20.5|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2026-10-01 03:56:20.5|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2026-10-01 03:56:21.0|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2026-10-01 03:56:21.1|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2026-10-01 03:56:21.1|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2026-10-01 03:56:21.1|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2026-10-01 03:56:21.1|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2026-10-01 03:56:21.2|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2026-10-01 03:56:22.5|Debug|Api|[GET] /api/v1/customFilter: 200.OK (188 ms)
+2026-10-01 03:56:23.0|Debug|Api|[GET] /api/v1/indexer: 200.OK (729 ms)
+2026-10-01 03:56:23.0|Debug|Api|[GET] /api/v1/tag: 200.OK (755 ms)
+2026-10-01 03:56:23.0|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (551 ms)
+2026-10-01 03:56:23.0|Debug|Api|[GET] /api/v1/appprofile: 200.OK (761 ms)
+2026-10-01 03:56:23.0|Debug|Api|[GET] /api/v1/indexer/categories: 200.OK (26 ms)
+2026-10-01 03:56:23.0|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2026-10-01 03:56:23.1|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2026-10-01 03:56:23.1|Debug|Api|[GET] /api/v1/config/ui: 200.OK (109 ms)
+2026-10-01 03:56:23.2|Debug|Api|[GET] /api/v1/localization: 200.OK (76 ms)
+2026-10-01 03:56:23.4|Debug|Api|[GET] /api/v1/system/status: 200.OK (340 ms)
+2026-10-01 03:56:23.6|Debug|Api|[GET] /api/v1/config/host: 200.OK (499 ms)
+2026-10-01 03:56:24.0|Debug|Api|[GET] /api/v1/indexer: 200.OK (36 ms)
+2026-10-01 03:56:24.0|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (32 ms)
+2026-10-01 03:56:24.1|Debug|Api|[GET] /api/v1/config/host: 200.OK (106 ms)
+2026-10-01 03:56:24.1|Debug|Api|[GET] /api/v1/health: 200.OK (154 ms)
+2026-10-01 03:56:24.2|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2026-10-01 11:42:50.5|Debug|InstallUpdateService|Checking for updates
+2026-10-01 11:42:51.4|Debug|InstallUpdateService|No update available
+2026-10-01 13:16:26.4|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2026-10-01 13:16:26.9|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2026-10-01 13:16:26.9|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2026-10-01 13:16:26.9|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2026-10-01 13:16:27.0|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2026-10-01 13:16:27.1|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2026-10-01 13:16:27.1|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2026-10-01 13:16:27.2|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2026-10-01 13:16:27.2|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2026-10-01 13:16:27.3|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2026-10-01 13:16:28.7|Debug|Api|[GET] /api/v1/customFilter: 200.OK (155 ms)
+2026-10-01 13:16:28.7|Debug|Api|[GET] /api/v1/indexer: 200.OK (110 ms)
+2026-10-01 13:16:28.7|Debug|Api|[GET] /api/v1/tag: 200.OK (157 ms)
+2026-10-01 13:16:28.7|Debug|Api|[GET] /api/v1/appprofile: 200.OK (165 ms)
+2026-10-01 13:16:28.7|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (21 ms)
+2026-10-01 13:16:28.7|Debug|Api|[GET] /api/v1/indexer/categories: 200.OK (42 ms)
+2026-10-01 13:16:28.8|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2026-10-01 13:16:28.8|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2026-10-01 13:16:28.8|Debug|Api|[GET] /api/v1/system/status: 200.OK (53 ms)
+2026-10-01 13:16:28.8|Debug|Api|[GET] /api/v1/config/ui: 200.OK (87 ms)
+2026-10-01 13:16:28.8|Debug|Api|[GET] /api/v1/config/host: 200.OK (99 ms)
+2026-10-01 13:16:28.9|Debug|Api|[GET] /api/v1/localization: 200.OK (201 ms)
+2026-10-01 13:16:29.7|Debug|Api|[GET] /api/v1/indexer: 200.OK (19 ms)
+2026-10-01 13:16:29.7|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (5 ms)
+2026-10-01 13:16:29.7|Debug|Api|[GET] /api/v1/health: 200.OK (39 ms)
+2026-10-01 13:16:29.8|Debug|Api|[GET] /api/v1/config/host: 200.OK (20 ms)
+2026-10-01 13:16:30.4|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2026-10-01 13:17:18.6|Debug|Api|[PUT] /api/v1/config/host: 202.Accepted (1043 ms)
+2026-10-01 13:17:18.7|Debug|Api|[GET] /api/v1/system/status: 200.OK (8 ms)
+2026-10-01 13:17:24.1|Debug|Api|[GET] /api/v1/health: 200.OK (2 ms)
+2026-10-01 13:17:52.2|Debug|Api|[GET] /api/v1/appprofile: 200.OK (4 ms)
+2026-10-01 13:17:52.3|Debug|Api|[GET] /api/v1/applications: 200.OK (139 ms)
+2026-10-01 13:20:19.1|Debug|Api|[GET] /api/v1/applications/schema: 200.OK (314 ms)
+2026-10-01 13:20:50.9|Debug|Api|[GET] /api/v1/command: 200.OK (143 ms)
+2026-10-01 13:25:17.1|Debug|Api|[GET] /api/v1/config/host: 200.OK (6 ms)
+2026-10-01 13:26:20.7|Debug|Api|[GET] /api/v1/command: 200.OK (5 ms)
+2026-10-01 13:27:27.4|Debug|Api|[GET] /api/v1/applications: 200.OK (5 ms)
+2026-10-01 13:27:27.5|Debug|Api|[GET] /api/v1/appprofile: 200.OK (2 ms)
+2026-10-01 13:27:32.9|Debug|Api|[GET] /api/v1/applications/schema: 200.OK (65 ms)
+2026-10-01 13:28:14.1|Warn|Radarr|Unable to complete application test
+
+[v2.6.5.5623] System.Net.Http.HttpRequestException: One or more errors occurred. (Connection refused) (Connection refused) (localhost:7878)
+ ---> System.AggregateException: One or more errors occurred. (Connection refused) (Connection refused)
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.HappyEyeballs.HttpHappyEyeballs.ConnectSocket(IPAddress ipAddress, DnsEndPoint endPoint, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/HappyEyeballs/HttpHappyEyeballs.cs:line 75
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.HappyEyeballs.HappyEyeballs`1.ParallelTask(Int32 totalTasks, Func`3 taskBuilder, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/HappyEyeballs/HappyEyeballs.cs:line 175
+   at NzbDrone.Common.Http.HappyEyeballs.HappyEyeballs`1.Connect(IPAddress[] addresses, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/HappyEyeballs/HappyEyeballs.cs:line 43
+   at NzbDrone.Common.Http.HappyEyeballs.HttpHappyEyeballs.OnConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/HappyEyeballs/HttpHappyEyeballs.cs:line 37
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+ ---> (Inner Exception #1) System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.HappyEyeballs.HttpHappyEyeballs.ConnectSocket(IPAddress ipAddress, DnsEndPoint endPoint, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/HappyEyeballs/HttpHappyEyeballs.cs:line 75<---
+
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 113
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 171
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 235
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.GetIndexerSchema(RadarrSettings settings) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 81
+   at NzbDrone.Core.Applications.Radarr.Radarr.<>c__DisplayClass11_0.<BuildRadarrIndexer>b__0() in ./NzbDrone.Core/Applications/Radarr/Radarr.cs:line 231
+   at NzbDrone.Common.Cache.Cached`1.Get(String key, Func`1 function, Nullable`1 lifeTime)
+   at NzbDrone.Core.Applications.Radarr.Radarr.BuildRadarrIndexer(IndexerDefinition indexer, IndexerCapabilities indexerCapabilities, DownloadProtocol protocol, Int32 id) in ./NzbDrone.Core/Applications/Radarr/Radarr.cs:line 231
+   at NzbDrone.Core.Applications.Radarr.Radarr.Test() in ./NzbDrone.Core/Applications/Radarr/Radarr.cs:line 52
+
+
+2026-10-01 13:28:14.3|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- BaseUrl: Unable to complete application test, cannot connect to Radarr. One or more errors occurred. (Connection refused) (Connection refused) (localhost:7878)
+2026-10-01 13:28:14.4|Debug|Api|[POST] /api/v1/applications/test: 400.BadRequest (574 ms)
+2026-10-01 13:29:21.4|Debug|Api|[POST] /api/v1/applications/test: 200.OK (1703 ms)
+2026-10-01 13:29:29.7|Debug|Api|[POST] /api/v1/applications: 201.Created (264 ms)
+2026-10-01 13:30:18.0|Debug|Api|[GET] /api/v1/applications/schema: 200.OK (19 ms)
+2026-10-01 13:31:10.2|Debug|Api|[POST] /api/v1/applications/test: 200.OK (1322 ms)
+2026-10-01 13:31:12.2|Debug|Api|[POST] /api/v1/applications: 201.Created (167 ms)
+2026-10-01 13:31:50.8|Debug|Api|[GET] /api/v1/command: 200.OK (4 ms)
+2026-10-01 13:37:20.8|Debug|Api|[GET] /api/v1/command: 200.OK (1 ms)
+2026-10-01 13:42:50.9|Debug|Api|[GET] /api/v1/command: 200.OK (3 ms)
+2026-10-01 13:44:23.3|Debug|Api|[POST] /api/v1/applications/test: 200.OK (88 ms)
+2026-10-01 13:44:27.0|Debug|Api|[PUT] /api/v1/applications/2: 202.Accepted (165 ms)
+2026-10-01 13:44:32.0|Debug|Api|[GET] /api/v1/health: 200.OK (1 ms)
+2026-10-01 13:48:20.9|Debug|Api|[GET] /api/v1/command: 200.OK (1 ms)
+2026-10-01 13:53:51.0|Debug|Api|[GET] /api/v1/command: 200.OK (1 ms)
+2026-10-01 13:59:21.0|Debug|Api|[GET] /api/v1/command: 200.OK (2 ms)
+2026-10-01 14:04:51.0|Debug|Api|[GET] /api/v1/command: 200.OK (2 ms)
+2026-10-01 14:10:21.1|Debug|Api|[GET] /api/v1/command: 200.OK (23 ms)
+2026-10-01 14:15:51.1|Debug|Api|[GET] /api/v1/command: 200.OK (16 ms)
+2026-10-01 14:21:21.1|Debug|Api|[GET] /api/v1/command: 200.OK (1 ms)
+2026-10-01 14:26:51.1|Debug|Api|[GET] /api/v1/command: 200.OK (17 ms)
+2026-10-01 14:32:21.1|Debug|Api|[GET] /api/v1/command: 200.OK (7 ms)
+2026-10-01 14:37:21.2|Debug|Api|[GET] /api/v1/command: 200.OK (14 ms)
+2026-10-01 14:42:51.4|Debug|Api|[GET] /api/v1/command: 200.OK (20 ms)
+2026-10-01 14:48:21.3|Debug|Api|[GET] /api/v1/command: 200.OK (27 ms)
+2026-10-01 14:53:51.3|Debug|Api|[GET] /api/v1/command: 200.OK (11 ms)
+2026-10-01 14:59:21.3|Debug|Api|[GET] /api/v1/command: 200.OK (2 ms)
+2026-10-01 15:04:51.3|Debug|Api|[GET] /api/v1/command: 200.OK (6 ms)
+2026-10-01 15:10:21.3|Debug|Api|[GET] /api/v1/command: 200.OK (1 ms)
+2026-10-01 15:15:51.3|Debug|Api|[GET] /api/v1/command: 200.OK (6 ms)
+2026-10-01 15:21:21.3|Debug|Api|[GET] /api/v1/command: 200.OK (7 ms)
+2026-10-01 15:26:51.3|Debug|Api|[GET] /api/v1/command: 200.OK (2 ms)
+2026-10-01 15:32:21.4|Debug|Api|[GET] /api/v1/command: 200.OK (10 ms)
+2026-10-01 15:37:51.4|Debug|Api|[GET] /api/v1/command: 200.OK (3 ms)
+2026-10-01 15:43:21.4|Debug|Api|[GET] /api/v1/command: 200.OK (10 ms)
+2026-10-01 15:48:51.4|Debug|Api|[GET] /api/v1/command: 200.OK (17 ms)
+2026-10-01 15:54:21.5|Debug|Api|[GET] /api/v1/command: 200.OK (18 ms)
+2026-10-01 15:59:51.5|Debug|Api|[GET] /api/v1/command: 200.OK (26 ms)
+2026-10-01 16:05:21.6|Debug|Api|[GET] /api/v1/command: 200.OK (33 ms)
+2026-10-01 16:10:51.6|Debug|Api|[GET] /api/v1/command: 200.OK (3 ms)
+2026-10-01 16:11:22.0|Debug|Api|[GET] /api/v1/indexerProxy: 200.OK (279 ms)
+2026-10-01 16:11:24.4|Debug|Api|[GET] /api/v1/indexerProxy/schema: 200.OK (457 ms)
+2026-10-01 16:11:41.1|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://prowlarr.servarr.com/v1/ping
+2026-10-01 16:11:41.2|Error|FlareSolverr|Proxy validation failed
+
+[v2.6.5.5623] System.Net.Http.HttpRequestException: One or more errors occurred. (Connection refused) (Connection refused) (localhost:8191)
+ ---> System.AggregateException: One or more errors occurred. (Connection refused) (Connection refused)
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.HappyEyeballs.HttpHappyEyeballs.ConnectSocket(IPAddress ipAddress, DnsEndPoint endPoint, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/HappyEyeballs/HttpHappyEyeballs.cs:line 75
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.HappyEyeballs.HappyEyeballs`1.ParallelTask(Int32 totalTasks, Func`3 taskBuilder, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/HappyEyeballs/HappyEyeballs.cs:line 175
+   at NzbDrone.Common.Http.HappyEyeballs.HappyEyeballs`1.Connect(IPAddress[] addresses, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/HappyEyeballs/HappyEyeballs.cs:line 43
+   at NzbDrone.Common.Http.HappyEyeballs.HttpHappyEyeballs.OnConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/HappyEyeballs/HttpHappyEyeballs.cs:line 37
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+ ---> (Inner Exception #1) System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.HappyEyeballs.HttpHappyEyeballs.ConnectSocket(IPAddress ipAddress, DnsEndPoint endPoint, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/HappyEyeballs/HttpHappyEyeballs.cs:line 75<---
+
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 113
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 171
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.IndexerProxies.FlareSolverr.FlareSolverr.Test() in ./NzbDrone.Core/IndexerProxies/FlareSolverr/FlareSolverr.cs:line 194
+
+
+2026-10-01 16:11:42.3|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- Host: Unable to connect to proxy: One or more errors occurred. (Connection refused) (Connection refused) (localhost:8191). Check the log surrounding this error for details
+2026-10-01 16:11:42.3|Debug|Api|[POST] /api/v1/indexerProxy/test: 400.BadRequest (1781 ms)
+2026-10-01 16:11:49.7|Debug|Api|[GET] /api/v1/indexerProxy/schema: 200.OK (13 ms)
+2026-10-01 16:12:25.2|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- Host: 'Host' must not be empty.
+ -- Port: 'Port' must not be empty.
+2026-10-01 16:12:25.2|Debug|Api|[POST] /api/v1/indexerProxy/test: 400.BadRequest (138 ms)
+2026-10-01 16:16:21.6|Debug|Api|[GET] /api/v1/command: 200.OK (5 ms)
+2026-10-01 16:21:51.6|Debug|Api|[GET] /api/v1/command: 200.OK (1 ms)
+2026-10-01 16:26:09.9|Debug|Api|[GET] /api/v1/indexerProxy/schema: 200.OK (3 ms)
+2026-10-01 16:26:22.4|Debug|Api|[GET] /api/v1/indexerProxy/schema: 200.OK (7 ms)
+2026-10-01 16:26:35.3|Debug|Api|[GET] /api/v1/indexerProxy/schema: 200.OK (5 ms)
+2026-10-01 16:27:21.7|Debug|Api|[GET] /api/v1/command: 200.OK (1 ms)
+2026-10-01 16:28:29.6|Debug|Api|[GET] /api/v1/indexerProxy/schema: 200.OK (5 ms)
+2026-10-01 16:28:34.8|Debug|Api|[GET] /api/v1/indexer: 200.OK (42 ms)
+2026-10-01 16:28:34.9|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (42 ms)
+2026-10-01 16:28:40.8|Debug|Api|[GET] /api/v1/indexer/schema: 200.OK (2986 ms)
+2026-10-01 16:28:53.9|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (165 ms)
+2026-10-01 16:28:54.6|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (810 ms)
+2026-10-01 16:29:00.7|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/1/
+2026-10-01 16:29:00.7|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/1/
+2026-10-01 16:29:00.9|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access 1337x.to, blocked by CloudFlare Protection.
+2026-10-01 16:29:00.9|Debug|Api|[POST] /api/v1/indexer/test: 400.BadRequest (555 ms)
+2026-10-01 16:32:51.7|Debug|Api|[GET] /api/v1/command: 200.OK (1 ms)

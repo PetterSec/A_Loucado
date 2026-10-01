@@ -82,8 +82,9 @@ services:
       - sonarr
 
   jellyseerr:
-    image: fallenbagel/jellyseerr:latest
-    container_name: jellyseerr
+    image: ghcr.io/seerr-team/seerr:latest
+    container_name: seerr
+    init: true
     restart: unless-stopped
     environment:
       - LOG_LEVEL=info

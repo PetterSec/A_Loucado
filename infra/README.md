@@ -8,7 +8,7 @@
 - Radarr: http://127.0.0.1:7878
 - Sonarr: http://127.0.0.1:8989
 - Bazarr: http://127.0.0.1:6767
-- Jellyseerr: http://127.0.0.1:5055
+- Seerr: http://127.0.0.1:5055
 
 Use o IP da máquina no lugar de `127.0.0.1` ao acessar de outro dispositivo da rede.
 
@@ -22,7 +22,7 @@ Use o IP da máquina no lugar de `127.0.0.1` ao acessar de outro dispositivo da 
 6. No Prowlarr, configure apenas indexadores e fontes que você está autorizado a utilizar.
 7. No Prowlarr, conecte Radarr e Sonarr pelas URLs internas `http://radarr:7878` e `http://sonarr:8989`.
 8. No Bazarr, conecte ao Radarr e Sonarr e escolha os provedores de legendas desejados.
-9. No Jellyseerr, conecte ao Jellyfin e ao Radarr/Sonarr para receber pedidos.
+9. No Seerr, conecte ao Jellyfin e ao Radarr/Sonarr para receber pedidos.
 
 ## IPTV legal
 

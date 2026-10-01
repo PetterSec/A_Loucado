@@ -63,15 +63,16 @@ general:
   concurrent_jobs: 4
   days_to_upgrade_subs: 7
   debug: false
-  default_und_audio_lang: ''
-  default_und_embedded_subtitles_lang: ''
+  default_und_audio_lang: pb
+  default_und_embedded_subtitles_lang: pb
   disable_all_providers_ssl_verify: false
   dont_notify_manual_actions: false
   embedded_subs_show_desired: true
   embedded_subtitles_parser: ffprobe
   enable_strm_support: false
   enabled_integrations: []
-  enabled_providers: []
+  enabled_providers:
+  - opensubtitlescom
   external_webhook_password: ''
   external_webhook_url: ''
   external_webhook_username: ''
@@ -86,13 +87,13 @@ general:
   language_equals: []
   minimum_score: 90
   minimum_score_movie: 70
-  movie_default_enabled: false
-  movie_default_profile: ''
-  movie_tag_enabled: false
+  movie_default_enabled: true
+  movie_default_profile: 1
+  movie_tag_enabled: true
   multithreading: true
   notify_if_nothing_is_missing_for_signalr_event: false
   page_size: 25
-  parse_embedded_audio_track: false
+  parse_embedded_audio_track: true
   path_mappings: []
   path_mappings_movie: []
   port: 6767
@@ -100,11 +101,11 @@ general:
   postprocessing_threshold: 90
   postprocessing_threshold_movie: 70
   remove_profile_tags: []
-  serie_default_enabled: false
-  serie_default_profile: ''
-  serie_tag_enabled: false
+  serie_default_enabled: true
+  serie_default_profile: 1
+  serie_tag_enabled: true
   show_live_badge: true
-  single_language: false
+  single_language: true
   skip_hashing: false
   subfolder: current
   subfolder_custom: ''
@@ -120,9 +121,9 @@ general:
   use_postprocessing: false
   use_postprocessing_threshold: false
   use_postprocessing_threshold_movie: false
-  use_radarr: false
+  use_radarr: true
   use_scenename: true
-  use_sonarr: false
+  use_sonarr: true
   use_whisper_fallback: false
   use_whisper_fallback_series: false
   utf8_encode: true
@@ -174,11 +175,11 @@ napisy24:
   password: ''
   username: ''
 opensubtitlescom:
-  include_ai_translated: false
-  include_machine_translated: false
-  password: ''
+  include_ai_translated: true
+  include_machine_translated: true
+  password: Pett235972@C#
   use_hash: true
-  username: ''
+  username: Petterson
 pipocas:
   password: ''
   username: ''
@@ -228,15 +229,15 @@ proxy:
   url: ''
   username: ''
 radarr:
-  apikey: ''
-  base_url: /
+  apikey: a522a5f87b924a6a9fb29d0c7b7ca84a
+  base_url: ''
   defer_search_signalr: false
   excluded_tags: []
   full_update: Daily
   full_update_day: 6
   full_update_hour: 4
   http_timeout: 60
-  ip: 127.0.0.1
+  ip: radarr
   movies_sync: 60
   movies_sync_on_live: true
   only_monitored: false
@@ -245,8 +246,8 @@ radarr:
   sync_only_monitored_movies: false
   use_ffprobe_cache: true
 sonarr:
-  apikey: ''
-  base_url: /
+  apikey: fe346dc31d364713a6f8b5792b152b46
+  base_url: ''
   defer_search_signalr: false
   exclude_season_zero: false
   excluded_series_types: []
@@ -255,7 +256,7 @@ sonarr:
   full_update_day: 6
   full_update_hour: 4
   http_timeout: 60
-  ip: 127.0.0.1
+  ip: sonarr
   only_monitored: false
   port: 8989
   series_sync: 60

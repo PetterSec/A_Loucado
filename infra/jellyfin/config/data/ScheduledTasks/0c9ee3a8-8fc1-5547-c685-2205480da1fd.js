@@ -1,0 +1,1 @@
+{"StartTimeUtc":"2026-10-01T15:14:24.1888684Z","EndTimeUtc":"2026-10-01T15:14:24.474031Z","Status":"Completed","Name":"Atualizar Canais","Key":"RefreshInternetChannels","Id":"0c9ee3a88fc15547c6852205480da1fd"}

@@ -1,0 +1,1 @@
+{"StartTimeUtc":"2026-10-01T15:14:23.8075925Z","EndTimeUtc":"2026-10-01T15:14:23.9370526Z","Status":"Completed","Name":"Limpar pasta de logs","Key":"CleanLogFiles","Id":"1c8ede62c521bea0bf851344f5b8ca40"}

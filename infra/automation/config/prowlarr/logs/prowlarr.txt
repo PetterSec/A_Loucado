@@ -1269,3 +1269,93 @@
 2026-10-01 03:48:33.9|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
 2026-10-01 03:48:33.9|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
 2026-10-01 03:48:33.9|Info|Microsoft.Hosting.Lifetime|Content root path: /app/prowlarr/bin
+2026-10-01 13:28:14.1|Warn|Radarr|Unable to complete application test
+
+[v2.6.5.5623] System.Net.Http.HttpRequestException: One or more errors occurred. (Connection refused) (Connection refused) (localhost:7878)
+ ---> System.AggregateException: One or more errors occurred. (Connection refused) (Connection refused)
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.HappyEyeballs.HttpHappyEyeballs.ConnectSocket(IPAddress ipAddress, DnsEndPoint endPoint, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/HappyEyeballs/HttpHappyEyeballs.cs:line 75
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.HappyEyeballs.HappyEyeballs`1.ParallelTask(Int32 totalTasks, Func`3 taskBuilder, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/HappyEyeballs/HappyEyeballs.cs:line 175
+   at NzbDrone.Common.Http.HappyEyeballs.HappyEyeballs`1.Connect(IPAddress[] addresses, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/HappyEyeballs/HappyEyeballs.cs:line 43
+   at NzbDrone.Common.Http.HappyEyeballs.HttpHappyEyeballs.OnConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/HappyEyeballs/HttpHappyEyeballs.cs:line 37
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+ ---> (Inner Exception #1) System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.HappyEyeballs.HttpHappyEyeballs.ConnectSocket(IPAddress ipAddress, DnsEndPoint endPoint, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/HappyEyeballs/HttpHappyEyeballs.cs:line 75<---
+
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 113
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 171
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 235
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.GetIndexerSchema(RadarrSettings settings) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 81
+   at NzbDrone.Core.Applications.Radarr.Radarr.<>c__DisplayClass11_0.<BuildRadarrIndexer>b__0() in ./NzbDrone.Core/Applications/Radarr/Radarr.cs:line 231
+   at NzbDrone.Common.Cache.Cached`1.Get(String key, Func`1 function, Nullable`1 lifeTime)
+   at NzbDrone.Core.Applications.Radarr.Radarr.BuildRadarrIndexer(IndexerDefinition indexer, IndexerCapabilities indexerCapabilities, DownloadProtocol protocol, Int32 id) in ./NzbDrone.Core/Applications/Radarr/Radarr.cs:line 231
+   at NzbDrone.Core.Applications.Radarr.Radarr.Test() in ./NzbDrone.Core/Applications/Radarr/Radarr.cs:line 52
+
+
+2026-10-01 13:28:14.3|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- BaseUrl: Unable to complete application test, cannot connect to Radarr. One or more errors occurred. (Connection refused) (Connection refused) (localhost:7878)
+2026-10-01 16:11:41.2|Error|FlareSolverr|Proxy validation failed
+
+[v2.6.5.5623] System.Net.Http.HttpRequestException: One or more errors occurred. (Connection refused) (Connection refused) (localhost:8191)
+ ---> System.AggregateException: One or more errors occurred. (Connection refused) (Connection refused)
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.HappyEyeballs.HttpHappyEyeballs.ConnectSocket(IPAddress ipAddress, DnsEndPoint endPoint, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/HappyEyeballs/HttpHappyEyeballs.cs:line 75
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.HappyEyeballs.HappyEyeballs`1.ParallelTask(Int32 totalTasks, Func`3 taskBuilder, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/HappyEyeballs/HappyEyeballs.cs:line 175
+   at NzbDrone.Common.Http.HappyEyeballs.HappyEyeballs`1.Connect(IPAddress[] addresses, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/HappyEyeballs/HappyEyeballs.cs:line 43
+   at NzbDrone.Common.Http.HappyEyeballs.HttpHappyEyeballs.OnConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/HappyEyeballs/HttpHappyEyeballs.cs:line 37
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+ ---> (Inner Exception #1) System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.HappyEyeballs.HttpHappyEyeballs.ConnectSocket(IPAddress ipAddress, DnsEndPoint endPoint, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/HappyEyeballs/HttpHappyEyeballs.cs:line 75<---
+
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 113
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 171
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.IndexerProxies.FlareSolverr.FlareSolverr.Test() in ./NzbDrone.Core/IndexerProxies/FlareSolverr/FlareSolverr.cs:line 194
+
+
+2026-10-01 16:11:42.3|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- Host: Unable to connect to proxy: One or more errors occurred. (Connection refused) (Connection refused) (localhost:8191). Check the log surrounding this error for details
+2026-10-01 16:12:25.2|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- Host: 'Host' must not be empty.
+ -- Port: 'Port' must not be empty.
+2026-10-01 16:29:00.9|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access 1337x.to, blocked by CloudFlare Protection.

@@ -15,3 +15,31 @@
 2026-10-01T06:48:57.469Z [info][Discover Slider]: Creating built-in discovery slider {"slider":{"type":11,"enabled":true,"isBuiltIn":true,"order":10}}
 2026-10-01T06:48:57.509Z [info][Discover Slider]: Creating built-in discovery slider {"slider":{"type":12,"enabled":true,"isBuiltIn":true,"order":11}}
 2026-10-01T06:48:59.972Z [info][Server]: Server ready on port 5055 
+2026-10-01T17:07:34.636Z [error][Jellyfin API]: Something went wrong while authenticating with the Jellyfin server: Request failed with status code 400 {"error":400,"ip":"172.19.0.1"}
+2026-10-01T17:07:34.638Z [error][Auth]:  
+2026-10-01T17:07:42.538Z [error][Jellyfin API]: Something went wrong while authenticating with the Jellyfin server: Request failed with status code 400 {"error":400,"ip":"172.19.0.1"}
+2026-10-01T17:07:42.539Z [error][Auth]:  
+2026-10-01T17:08:04.078Z [error][Jellyfin API]: Something went wrong while authenticating with the Jellyfin server: Request failed with status code 400 {"error":400,"ip":"172.19.0.1"}
+2026-10-01T17:08:04.080Z [error][Auth]:  
+2026-10-01T17:08:33.277Z [error][Jellyfin API]: Something went wrong while authenticating with the Jellyfin server: Request failed with status code 400 {"error":400,"ip":"172.19.0.1"}
+2026-10-01T17:08:33.278Z [error][Auth]:  
+2026-10-01T17:11:49.536Z [error][Jellyfin API]: Something went wrong while authenticating with the Jellyfin server: Request failed with status code 400 {"error":400,"ip":"172.19.0.1"}
+2026-10-01T17:11:49.537Z [error][Auth]:  
+2026-10-01T17:14:01.801Z [error][Jellyfin API]: Something went wrong while authenticating with the Jellyfin server: Request failed with status code 400 {"error":400,"ip":"172.19.0.1"}
+2026-10-01T17:14:01.802Z [error][Auth]:  
+2026-10-01T17:15:10.309Z [error][Jellyfin API]: Something went wrong while authenticating with the Jellyfin server: Request failed with status code 400 {"error":400,"ip":"172.19.0.1"}
+2026-10-01T17:15:10.313Z [error][Auth]:  
+2026-10-01T17:26:29.704Z [error][Jellyfin API]: Something went wrong while authenticating with the Jellyfin server: Request failed with status code 400 {"error":400,"ip":"172.19.0.1"}
+2026-10-01T17:26:29.714Z [error][Auth]:  
+2026-10-01T17:28:59.521Z [error][Jellyfin API]: Something went wrong while authenticating with the Jellyfin server: Request failed with status code 400 {"error":400,"ip":"172.19.0.1"}
+2026-10-01T17:28:59.523Z [error][Auth]:  
+2026-10-01T17:31:30.132Z [error][Jellyfin API]: Something went wrong while authenticating with the Jellyfin server: Request failed with status code 400 {"error":400,"ip":"172.19.0.1"}
+2026-10-01T17:31:30.134Z [error][Auth]:  
+2026-10-01T17:31:53.799Z [error][Jellyfin API]: Something went wrong while authenticating with the Jellyfin server: Request failed with status code 400 {"error":400,"ip":"172.19.0.1"}
+2026-10-01T17:31:53.801Z [error][Auth]:  
+2026-10-01T17:32:23.607Z [error][Jellyfin API]: Something went wrong while authenticating with the Jellyfin server: Request failed with status code 400 {"error":400,"ip":"172.19.0.1"}
+2026-10-01T17:32:23.610Z [error][Auth]:  
+2026-10-01T17:33:10.345Z [error][Jellyfin API]: Something went wrong while authenticating with the Jellyfin server: Request failed with status code 400 {"error":400,"ip":"172.19.0.1"}
+2026-10-01T17:33:10.348Z [error][Auth]:  
+2026-10-01T17:33:39.511Z [error][Jellyfin API]: Something went wrong while authenticating with the Jellyfin server: Request failed with status code 400 {"error":400,"ip":"172.19.0.1"}
+2026-10-01T17:33:39.514Z [error][Auth]:  

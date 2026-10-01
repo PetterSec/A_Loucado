@@ -2,3 +2,19 @@
 2026-10-01 03:49:58|INFO    |root                            |Interactive jobs queue started and waiting for tasks|
 2026-10-01 03:49:58|INFO    |waitress                        |BAZARR is started and waiting for requests on: http://***.***.***.***:6767|
 2026-10-01 03:49:58|INFO    |waitress                        |BAZARR is started and waiting for requests on: http://[::]:6767|
+2026-10-01 13:45:02|INFO    |root                            |Bazarr is being restarted...|
+2026-10-01 13:45:45|INFO    |root                            |Scheduler will use this timezone: America/Sao_Paulo|
+2026-10-01 13:45:53|INFO    |root                            |Interactive jobs queue started and waiting for tasks|
+2026-10-01 13:45:53|INFO    |waitress                        |BAZARR is started and waiting for requests on: http://***.***.***.***:6767|
+2026-10-01 13:45:53|INFO    |waitress                        |BAZARR is started and waiting for requests on: http://[::]:6767|
+2026-10-01 13:46:44|INFO    |root                            |BAZARR trying to connect to Sonarr SignalR feed...|
+2026-10-01 13:46:44|INFO    |root                            |BAZARR SignalR client for Sonarr is connected and waiting for events.|
+2026-10-01 13:47:20|INFO    |root                            |BAZARR trying to connect to Radarr SignalR feed...|
+2026-10-01 13:47:20|INFO    |root                            |BAZARR SignalR client for Radarr is connected and waiting for events.|
+2026-10-01 14:03:30|INFO    |root                            |BAZARR throttled providers have been reset (only AuthenticationError, ConfigurationError and PaymentRequired).|
+2026-10-01 14:03:30|INFO    |root                            |BAZARR throttled providers have been reset (only AuthenticationError, ConfigurationError and PaymentRequired).|
+2026-10-01 14:03:30|INFO    |root                            |BAZARR throttled providers have been reset (only AuthenticationError, ConfigurationError and PaymentRequired).|
+2026-10-01 14:03:30|INFO    |root                            |BAZARR throttled providers have been reset (only AuthenticationError, ConfigurationError and PaymentRequired).|
+2026-10-01 14:03:30|INFO    |root                            |BAZARR throttled providers have been reset (only AuthenticationError, ConfigurationError and PaymentRequired).|
+2026-10-01 14:04:03|INFO    |root                            |BAZARR All existing episode subtitles indexed from disk.|
+2026-10-01 14:04:03|INFO    |root                            |BAZARR All existing movie subtitles indexed from disk.|
