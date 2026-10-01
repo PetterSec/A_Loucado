@@ -1,0 +1,4 @@
+2026-10-01 03:49:44|INFO    |root                            |Scheduler will use this timezone: America/Sao_Paulo|
+2026-10-01 03:49:58|INFO    |root                            |Interactive jobs queue started and waiting for tasks|
+2026-10-01 03:49:58|INFO    |waitress                        |BAZARR is started and waiting for requests on: http://***.***.***.***:6767|
+2026-10-01 03:49:58|INFO    |waitress                        |BAZARR is started and waiting for requests on: http://[::]:6767|

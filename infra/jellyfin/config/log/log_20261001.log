@@ -1,0 +1,1031 @@
+[2026-10-01 03:28:02.255 -03:00] [INF] [7] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/cache"
+[2026-10-01 03:28:03.211 -03:00] [INF] [4] Jellyfin.Server.ServerSetupApp.SetupServer: Kestrel is listening on "0.0.0.0"
+[2026-10-01 03:28:03.361 -03:00] [INF] [4] Main: Jellyfin version: "12.1.0"
+[2026-10-01 03:28:03.376 -03:00] [INF] [4] Main: Environment Variables: ["[JELLYFIN_FFMPEG, /usr/lib/jellyfin-ffmpeg/ffmpeg]", "[JELLYFIN_CACHE_DIR, /cache]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_CONFIG_DIR, /config/config]", "[JELLYFIN_WEB_DIR, /jellyfin/jellyfin-web]", "[JELLYFIN_DATA_DIR, /config]"]
+[2026-10-01 03:28:03.386 -03:00] [INF] [4] Main: Arguments: ["/jellyfin/jellyfin.dll"]
+[2026-10-01 03:28:03.388 -03:00] [INF] [4] Main: Operating system: "Debian GNU/Linux 13 (trixie)"
+[2026-10-01 03:28:03.388 -03:00] [INF] [4] Main: Architecture: X64
+[2026-10-01 03:28:03.391 -03:00] [INF] [4] Main: 64-Bit Process: True
+[2026-10-01 03:28:03.392 -03:00] [INF] [4] Main: User Interactive: True
+[2026-10-01 03:28:03.392 -03:00] [INF] [4] Main: Processor count: 4
+[2026-10-01 03:28:03.392 -03:00] [INF] [4] Main: Program data path: "/config"
+[2026-10-01 03:28:03.393 -03:00] [INF] [4] Main: Log directory path: "/config/log"
+[2026-10-01 03:28:03.394 -03:00] [INF] [4] Main: Config directory path: "/config/config"
+[2026-10-01 03:28:03.394 -03:00] [INF] [4] Main: Cache path: "/cache"
+[2026-10-01 03:28:03.395 -03:00] [INF] [4] Main: Temp directory path: "/tmp/jellyfin"
+[2026-10-01 03:28:03.396 -03:00] [INF] [4] Main: Web resources path: "/jellyfin/jellyfin-web"
+[2026-10-01 03:28:03.397 -03:00] [INF] [4] Main: Application directory: "/jellyfin/"
+[2026-10-01 03:28:03.413 -03:00] [INF] [4] Jellyfin.Server.Startup: Storage path `"/config/data"` (Fixed) successfully checked with "79.2GiB" free which is over the minimum of "2GiB".
+[2026-10-01 03:28:03.414 -03:00] [INF] [4] Jellyfin.Server.Startup: Storage path `"/cache"` (Fixed) successfully checked with "79.2GiB" free which is over the minimum of "2GiB".
+[2026-10-01 03:28:03.415 -03:00] [INF] [4] Jellyfin.Server.Startup: Storage path `"/config"` (Fixed) successfully checked with "79.2GiB" free which is over the minimum of "2GiB".
+[2026-10-01 03:28:03.546 -03:00] [INF] [4] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/cache"
+[2026-10-01 03:28:03.868 -03:00] [INF] [4] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLite connection string: "Data Source=/config/data/jellyfin.db;Cache=Private;Default Timeout=60;Pooling=True"
+[2026-10-01 03:28:03.912 -03:00] [INF] [4] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLITE connection pragma command set to: 
+"PRAGMA locking_mode=NORMAL;
+PRAGMA journal_size_limit=134217728;
+PRAGMA synchronous=1;
+PRAGMA temp_store=2;
+"
+[2026-10-01 03:28:03.919 -03:00] [INF] [4] Jellyfin.Database.Implementations.Locking.NoLockBehavior: The database locking mode has been set to: NoLock.
+[2026-10-01 03:28:04.091 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Initialise Migration service.
+[2026-10-01 03:28:04.096 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: System initialization detected. Seed data. Startup mode is: MediaServer
+[2026-10-01 03:28:06.588 -03:00] [WRN] [11] Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService: Health check "StartupCheck" with status Degraded completed after 11.1224ms with message '"Server is still starting up."'
+[2026-10-01 03:28:10.726 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration 4124c2cd-e939-4ffb-9be9-9b311c413638-"DisableTranscodingThrottling".
+[2026-10-01 03:28:10.750 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration ef103419-8451-40d8-9f34-d1a8e93a1679-"CreateUserLoggingConfigFile".
+[2026-10-01 03:28:10.752 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration 3793eb59-bc8c-456c-8b9f-bd5a62a42978-"MigrateActivityLogDb".
+[2026-10-01 03:28:10.756 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration acbe17b7-8435-4a83-8b64-6fcf162cb9bd-"RemoveDuplicateExtras".
+[2026-10-01 03:28:10.757 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration 5c4b82a2-f053-4009-bd05-b6fcad82f14c-"MigrateUserDb".
+[2026-10-01 03:28:10.758 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration 06387815-c3cc-421f-a888-fb5f9992bea8-"MigrateDisplayPreferencesDb".
+[2026-10-01 03:28:10.759 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration a81f75e0-8f43-416f-a5e8-516ccab4d8cc-"RemoveDownloadImagesInAdvance".
+[2026-10-01 03:28:10.760 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration 5bd72f41-e6f3-4f60-90aa-09869abe0e22-"MigrateAuthenticationDb".
+[2026-10-01 03:28:10.762 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration 615dfa9e-2497-4dbb-a472-61938b752c5b-"FixPlaylistOwner".
+[2026-10-01 03:28:10.763 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration cf6fabc2-9fbe-4933-84a5-ffe52ef22a58-"FixAudioData".
+[2026-10-01 03:28:10.764 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"MigrateLibraryDbCompatibilityCheck".
+[2026-10-01 03:28:10.765 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"MigrateLibraryDb".
+[2026-10-01 03:28:10.766 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"MoveExtractedFiles".
+[2026-10-01 03:28:10.768 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"RefreshInternalDateModified".
+[2026-10-01 03:28:10.769 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"MigrateKeyframeData".
+[2026-10-01 03:28:10.770 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"MigrateLibraryUserData".
+[2026-10-01 03:28:10.771 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"FixDates".
+[2026-10-01 03:28:10.772 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"ReseedFolderFlag".
+[2026-10-01 03:28:10.773 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"CleanMusicArtist".
+[2026-10-01 03:28:10.774 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"MigrateLinkedChildren".
+[2026-10-01 03:28:10.775 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"CleanupOrphanedExtras".
+[2026-10-01 03:28:10.776 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"FixIncorrectOwnerIdRelationships".
+[2026-10-01 03:28:10.778 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"FixLibrarySubtitleDownloadLanguages".
+[2026-10-01 03:28:10.779 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"MergeDuplicateMusicArtists".
+[2026-10-01 03:28:10.780 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"MergeDuplicatePeople".
+[2026-10-01 03:28:10.781 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"CleanupOrphanedExternalData".
+[2026-10-01 03:28:10.782 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"RefreshCleanNamesAndValues".
+[2026-10-01 03:28:10.783 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"RefreshForcedSortNames".
+[2026-10-01 03:28:10.784 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"RestorePlaylistChildrenFromMetadata".
+[2026-10-01 03:28:10.785 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"RecomputeSeriesPresentationKey".
+[2026-10-01 03:28:10.786 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"ConsolidateLocalizedUserViews".
+[2026-10-01 03:28:10.787 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"EnableLocalSimilarityProviders".
+[2026-10-01 03:28:10.788 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"RepairAlternateVersionLinks".
+[2026-10-01 03:28:10.790 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"MigrateRatingLevels".
+[2026-10-01 03:28:10.791 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"StripEmbeddedLinkedChildren".
+[2026-10-01 03:28:10.792 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"UpdateNormalizedUsername".
+[2026-10-01 03:28:10.793 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"DisableLegacyAuthorization".
+[2026-10-01 03:28:10.794 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration 9b354818-94d5-4b68-ac49-e35cb85f9d84-"CreateNetworkConfiguration".
+[2026-10-01 03:28:10.795 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration a8e61960-7726-4450-8f3d-82c12daabbcb-"MigrateEncodingOptions".
+[2026-10-01 03:28:10.796 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration a6dcacf4-c057-4ef9-80d3-61cef9ddb4f0-"MigrateMusicBrainzTimeout".
+[2026-10-01 03:28:10.797 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration 4fb5c950-1991-11ee-9b4b-0800200c9a66-"MigrateNetworkConfiguration".
+[2026-10-01 03:28:10.799 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration e73b777d-cd5c-4e71-957a-b86b3660b7cf-"RenameEnableGroupingIntoCollections".
+[2026-10-01 03:28:10.829 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Migration system initialisation completed.
+[2026-10-01 03:28:10.886 -03:00] [INF] [4] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/cache"
+[2026-10-01 03:28:10.921 -03:00] [INF] [4] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2026-10-01 03:28:11.088 -03:00] [INF] [4] Jellyfin.Networking.Manager.NetworkManager: Defined LAN subnets: ["127.0.0.0/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"]
+[2026-10-01 03:28:11.090 -03:00] [INF] [4] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions: []
+[2026-10-01 03:28:11.101 -03:00] [INF] [4] Jellyfin.Networking.Manager.NetworkManager: Used LAN subnets: ["127.0.0.0/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"]
+[2026-10-01 03:28:11.108 -03:00] [INF] [4] Jellyfin.Networking.Manager.NetworkManager: Filtered interface addresses: ["127.0.0.1", "172.19.0.2"]
+[2026-10-01 03:28:11.109 -03:00] [INF] [4] Jellyfin.Networking.Manager.NetworkManager: Bind Addresses ["0.0.0.0"]
+[2026-10-01 03:28:11.110 -03:00] [INF] [4] Jellyfin.Networking.Manager.NetworkManager: Remote IP filter is "Allowlist"
+[2026-10-01 03:28:11.110 -03:00] [INF] [4] Jellyfin.Networking.Manager.NetworkManager: Filtered subnets: []
+[2026-10-01 03:28:11.946 -03:00] [INF] [4] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLite connection string: "Data Source=/config/data/jellyfin.db;Cache=Private;Default Timeout=60;Pooling=True"
+[2026-10-01 03:28:11.948 -03:00] [INF] [4] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLITE connection pragma command set to: 
+"PRAGMA locking_mode=NORMAL;
+PRAGMA journal_size_limit=134217728;
+PRAGMA synchronous=1;
+PRAGMA temp_store=2;
+"
+[2026-10-01 03:28:11.951 -03:00] [INF] [4] Jellyfin.Database.Implementations.Locking.NoLockBehavior: The database locking mode has been set to: NoLock.
+[2026-10-01 03:28:12.163 -03:00] [INF] [4] Main: Prepare system for possible migrations
+[2026-10-01 03:28:12.373 -03:00] [INF] [4] Main: A migration will attempt to modify the jellyfin.db, will attempt to backup the file now.
+[2026-10-01 03:28:12.396 -03:00] [INF] [4] Main: Jellyfin database has been backed up as "20261001062812"
+[2026-10-01 03:28:12.415 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: There are 55 migrations for stage CoreInitialisation.
+[2026-10-01 03:28:12.444 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20200514181226_AddActivityLog"
+[2026-10-01 03:28:12.664 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20200514181226_AddActivityLog" was successfully applied
+[2026-10-01 03:28:12.670 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20200613202153_AddUsers"
+[2026-10-01 03:28:12.893 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20200613202153_AddUsers" was successfully applied
+[2026-10-01 03:28:12.897 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20200728005145_AddDisplayPreferences"
+[2026-10-01 03:28:13.041 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20200728005145_AddDisplayPreferences" was successfully applied
+[2026-10-01 03:28:13.045 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20200905220533_FixDisplayPreferencesIndex"
+[2026-10-01 03:28:13.118 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20200905220533_FixDisplayPreferencesIndex" was successfully applied
+[2026-10-01 03:28:13.123 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20201004171403_AddMaxActiveSessions"
+[2026-10-01 03:28:13.227 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20201004171403_AddMaxActiveSessions" was successfully applied
+[2026-10-01 03:28:13.233 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20201204223655_AddCustomDisplayPreferences"
+[2026-10-01 03:28:13.412 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20201204223655_AddCustomDisplayPreferences" was successfully applied
+[2026-10-01 03:28:13.417 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20210320181425_AddIndexesAndCollations"
+[2026-10-01 03:28:13.535 -03:00] [WRN] [4] Microsoft.EntityFrameworkCore.Migrations: An operation of type '"SqlOperation"' will be attempted while a rebuild of table '"ImageInfos"' is pending. The database may not be in an expected state. Review the SQL generated by this migration to help diagnose any failures. Consider moving these operations to a subsequent migration.
+[2026-10-01 03:28:13.539 -03:00] [WRN] [4] Microsoft.EntityFrameworkCore.Migrations: An operation of type '"SqlOperation"' will be attempted while a rebuild of table '"ImageInfos"' is pending. The database may not be in an expected state. Review the SQL generated by this migration to help diagnose any failures. Consider moving these operations to a subsequent migration.
+[2026-10-01 03:28:13.555 -03:00] [WRN] [4] Microsoft.EntityFrameworkCore.Migrations: An operation of type '"SqlOperation"' will be attempted while a rebuild of table '"Permissions"' is pending. The database may not be in an expected state. Review the SQL generated by this migration to help diagnose any failures. Consider moving these operations to a subsequent migration.
+[2026-10-01 03:28:13.556 -03:00] [WRN] [4] Microsoft.EntityFrameworkCore.Migrations: An operation of type '"SqlOperation"' will be attempted while a rebuild of table '"Permissions"' is pending. The database may not be in an expected state. Review the SQL generated by this migration to help diagnose any failures. Consider moving these operations to a subsequent migration.
+[2026-10-01 03:28:13.562 -03:00] [WRN] [4] Microsoft.EntityFrameworkCore.Migrations: An operation of type '"SqlOperation"' will be attempted while a rebuild of table '"Preferences"' is pending. The database may not be in an expected state. Review the SQL generated by this migration to help diagnose any failures. Consider moving these operations to a subsequent migration.
+[2026-10-01 03:28:13.563 -03:00] [WRN] [4] Microsoft.EntityFrameworkCore.Migrations: An operation of type '"SqlOperation"' will be attempted while a rebuild of table '"Preferences"' is pending. The database may not be in an expected state. Review the SQL generated by this migration to help diagnose any failures. Consider moving these operations to a subsequent migration.
+[2026-10-01 03:28:13.568 -03:00] [WRN] [4] Microsoft.EntityFrameworkCore.Migrations: An operation of type '"SqlOperation"' will be attempted while a rebuild of table '"Users"' is pending. The database may not be in an expected state. Review the SQL generated by this migration to help diagnose any failures. Consider moving these operations to a subsequent migration.
+[2026-10-01 03:28:13.569 -03:00] [WRN] [4] Microsoft.EntityFrameworkCore.Migrations: An operation of type '"SqlOperation"' will be attempted while a rebuild of table '"Users"' is pending. The database may not be in an expected state. Review the SQL generated by this migration to help diagnose any failures. Consider moving these operations to a subsequent migration.
+[2026-10-01 03:28:13.615 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20210320181425_AddIndexesAndCollations" was successfully applied
+[2026-10-01 03:28:13.621 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20210407110544_NullableCustomPrefValue"
+[2026-10-01 03:28:13.729 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20210407110544_NullableCustomPrefValue" was successfully applied
+[2026-10-01 03:28:13.737 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20210814002109_AddDevices"
+[2026-10-01 03:28:13.826 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20210814002109_AddDevices" was successfully applied
+[2026-10-01 03:28:13.833 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20221022080052_AddIndexActivityLogsDateCreated"
+[2026-10-01 03:28:13.901 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20221022080052_AddIndexActivityLogsDateCreated" was successfully applied
+[2026-10-01 03:28:13.909 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20230526173516_RemoveEasyPassword"
+[2026-10-01 03:28:14.046 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20230526173516_RemoveEasyPassword" was successfully applied
+[2026-10-01 03:28:14.051 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20230626233818_AddTrickplayInfos"
+[2026-10-01 03:28:14.127 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20230626233818_AddTrickplayInfos" was successfully applied
+[2026-10-01 03:28:14.132 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20230923170422_UserCastReceiver"
+[2026-10-01 03:28:14.209 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20230923170422_UserCastReceiver" was successfully applied
+[2026-10-01 03:28:14.215 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20240729140605_AddMediaSegments"
+[2026-10-01 03:28:14.294 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20240729140605_AddMediaSegments" was successfully applied
+[2026-10-01 03:28:14.300 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20240928082930_MarkSegmentProviderIdNonNullable"
+[2026-10-01 03:28:14.439 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20240928082930_MarkSegmentProviderIdNonNullable" was successfully applied
+[2026-10-01 03:28:14.444 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20241020103111_LibraryDbMigration"
+[2026-10-01 03:28:14.731 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20241020103111_LibraryDbMigration" was successfully applied
+[2026-10-01 03:28:14.738 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20241111131257_AddedCustomDataKey"
+[2026-10-01 03:28:14.882 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20241111131257_AddedCustomDataKey" was successfully applied
+[2026-10-01 03:28:14.888 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20241111135439_AddedCustomDataKeyKey"
+[2026-10-01 03:28:15.204 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20241111135439_AddedCustomDataKeyKey" was successfully applied
+[2026-10-01 03:28:15.211 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20241112152323_FixAncestorIdConfig"
+[2026-10-01 03:28:15.538 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20241112152323_FixAncestorIdConfig" was successfully applied
+[2026-10-01 03:28:15.587 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20241112232041_FixMediaStreams"
+[2026-10-01 03:28:15.926 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20241112232041_FixMediaStreams" was successfully applied
+[2026-10-01 03:28:15.933 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20241112234144_FixMediaStreams2"
+[2026-10-01 03:28:16.185 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20241112234144_FixMediaStreams2" was successfully applied
+[2026-10-01 03:28:16.190 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20241113133548_EnforceUniqueItemValue"
+[2026-10-01 03:28:16.306 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20241113133548_EnforceUniqueItemValue" was successfully applied
+[2026-10-01 03:28:16.311 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20250202021306_FixedCollation"
+[2026-10-01 03:28:16.531 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20250202021306_FixedCollation" was successfully applied
+[2026-10-01 03:28:16.536 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20250204092455_MakeStartEndDateNullable"
+[2026-10-01 03:28:16.754 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20250204092455_MakeStartEndDateNullable" was successfully applied
+[2026-10-01 03:28:16.761 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20250214031148_ChannelIdGuid"
+[2026-10-01 03:28:16.879 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20250214031148_ChannelIdGuid" was successfully applied
+[2026-10-01 03:28:16.915 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20250326065026_AddInheritedParentalRatingSubValue"
+[2026-10-01 03:28:17.049 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20250326065026_AddInheritedParentalRatingSubValue" was successfully applied
+[2026-10-01 03:28:17.055 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20250327101120_AddKeyframeData"
+[2026-10-01 03:28:17.186 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20250327101120_AddKeyframeData" was successfully applied
+[2026-10-01 03:28:17.192 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20250327171413_AddHdr10PlusFlag"
+[2026-10-01 03:28:17.320 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20250327171413_AddHdr10PlusFlag" was successfully applied
+[2026-10-01 03:28:17.325 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20250331182844_FixAttachmentMigration"
+[2026-10-01 03:28:17.561 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20250331182844_FixAttachmentMigration" was successfully applied
+[2026-10-01 03:28:17.567 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20250401142247_FixAncestors"
+[2026-10-01 03:28:17.698 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20250401142247_FixAncestors" was successfully applied
+[2026-10-01 03:28:17.705 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20250405075612_FixItemValuesIndices"
+[2026-10-01 03:28:17.836 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20250405075612_FixItemValuesIndices" was successfully applied
+[2026-10-01 03:28:17.841 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20250609115616_DetachUserDataInsteadOfDelete"
+[2026-10-01 03:28:18.125 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20250609115616_DetachUserDataInsteadOfDelete" was successfully applied
+[2026-10-01 03:28:18.130 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20250622170802_BaseItemImageInfoDateModifiedNullable"
+[2026-10-01 03:28:18.370 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20250622170802_BaseItemImageInfoDateModifiedNullable" was successfully applied
+[2026-10-01 03:28:18.376 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20250714044826_ResetJournalMode"
+[2026-10-01 03:28:18.517 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20250714044826_ResetJournalMode" was successfully applied
+[2026-10-01 03:28:18.522 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20250913211637_AddProperParentChildRelationBaseItemWithCascade"
+[2026-10-01 03:28:18.801 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20250913211637_AddProperParentChildRelationBaseItemWithCascade" was successfully applied
+[2026-10-01 03:28:18.807 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20250925203415_ExtendPeopleMapKey"
+[2026-10-01 03:28:19.043 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20250925203415_ExtendPeopleMapKey" was successfully applied
+[2026-10-01 03:28:19.050 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20260113102337_AddLinkedChildrenTable"
+[2026-10-01 03:28:19.190 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20260113102337_AddLinkedChildrenTable" was successfully applied
+[2026-10-01 03:28:19.197 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20260113203012_ChangeOwnerIdToGuid"
+[2026-10-01 03:28:19.495 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20260113203012_ChangeOwnerIdToGuid" was successfully applied
+[2026-10-01 03:28:19.500 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20260113233000_AddForeignKeyToOwnerId"
+[2026-10-01 03:28:19.737 -03:00] [WRN] [4] Microsoft.EntityFrameworkCore.Migrations: An operation of type '"SqlOperation"' will be attempted while a rebuild of table '"BaseItems"' is pending. The database may not be in an expected state. Review the SQL generated by this migration to help diagnose any failures. Consider moving these operations to a subsequent migration.
+[2026-10-01 03:28:19.738 -03:00] [WRN] [4] Microsoft.EntityFrameworkCore.Migrations: An operation of type '"UpdateDataOperation"' will be attempted while a rebuild of table '"BaseItems"' is pending. The database may not be in an expected state. Review the SQL generated by this migration to help diagnose any failures. Consider moving these operations to a subsequent migration.
+[2026-10-01 03:28:19.787 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20260113233000_AddForeignKeyToOwnerId" was successfully applied
+[2026-10-01 03:28:19.797 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20260113233500_DropExtraIdsColumn"
+[2026-10-01 03:28:20.065 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20260113233500_DropExtraIdsColumn" was successfully applied
+[2026-10-01 03:28:20.071 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20260116114245_AddLatestItemsDateCreatedIndexes"
+[2026-10-01 03:28:20.213 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20260116114245_AddLatestItemsDateCreatedIndexes" was successfully applied
+[2026-10-01 03:28:20.220 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20260118182305_AddIndicesToImageInfo"
+[2026-10-01 03:28:20.384 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20260118182305_AddIndicesToImageInfo" was successfully applied
+[2026-10-01 03:28:20.391 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20260130232147_AddBaseItemNameIndex"
+[2026-10-01 03:28:20.524 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20260130232147_AddBaseItemNameIndex" was successfully applied
+[2026-10-01 03:28:20.530 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20260206224832_IndexOptimizations"
+[2026-10-01 03:28:20.668 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20260206224832_IndexOptimizations" was successfully applied
+[2026-10-01 03:28:20.675 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20260215201634_ChangePrimaryVersionIdToGuid"
+[2026-10-01 03:28:20.809 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20260215201634_ChangePrimaryVersionIdToGuid" was successfully applied
+[2026-10-01 03:28:20.814 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20260308123920_AddTypeCleanNameIndex"
+[2026-10-01 03:28:20.948 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20260308123920_AddTypeCleanNameIndex" was successfully applied
+[2026-10-01 03:28:20.956 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20260504075755_AddPartialIndexForItemCounts"
+[2026-10-01 03:28:21.092 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20260504075755_AddPartialIndexForItemCounts" was successfully applied
+[2026-10-01 03:28:21.098 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20260522092303_AddNormalizedUsername"
+[2026-10-01 03:28:21.231 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20260522092303_AddNormalizedUsername" was successfully applied
+[2026-10-01 03:28:21.236 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20260524120336_AddUniqueNormalizedUsernameIndex"
+[2026-10-01 03:28:21.371 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20260524120336_AddUniqueNormalizedUsernameIndex" was successfully applied
+[2026-10-01 03:28:21.377 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20260723111547_AllowDuplicatePlaylistChildren"
+[2026-10-01 03:28:21.623 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20260723111547_AllowDuplicatePlaylistChildren" was successfully applied
+[2026-10-01 03:28:21.629 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20260724185102_AddPrimaryVersionIdIndex"
+[2026-10-01 03:28:21.771 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20260724185102_AddPrimaryVersionIdIndex" was successfully applied
+[2026-10-01 03:28:21.777 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20260728170000_AddPeopleNameLowerIndex"
+[2026-10-01 03:28:21.915 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20260728170000_AddPeopleNameLowerIndex" was successfully applied
+[2026-10-01 03:28:21.922 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20260728182152_AddPeopleItemMapCoveringIndex"
+[2026-10-01 03:28:22.114 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20260728182152_AddPeopleItemMapCoveringIndex" was successfully applied
+[2026-10-01 03:28:22.120 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20260812050902_AddMediaStreamFilterIndex"
+[2026-10-01 03:28:22.271 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20260812050902_AddMediaStreamFilterIndex" was successfully applied
+[2026-10-01 03:28:22.276 -03:00] [INF] [4] InternalDatabaseMigration: Perform migration "20260815063607_RemoveOrphanedUserPermissionsAndPreferences"
+[2026-10-01 03:28:22.518 -03:00] [INF] [4] InternalDatabaseMigration: Migration "20260815063607_RemoveOrphanedUserPermissionsAndPreferences" was successfully applied
+[2026-10-01 03:28:23.343 -03:00] [INF] [4] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Saving system configuration
+[2026-10-01 03:28:23.345 -03:00] [INF] [4] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/cache"
+[2026-10-01 03:28:23.376 -03:00] [INF] [4] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "TMDb" "12.1.0.0"
+[2026-10-01 03:28:23.380 -03:00] [INF] [4] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "Studio Images" "12.1.0.0"
+[2026-10-01 03:28:23.384 -03:00] [INF] [4] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "OMDb" "12.1.0.0"
+[2026-10-01 03:28:23.443 -03:00] [INF] [4] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "MusicBrainz" "12.1.0.0"
+[2026-10-01 03:28:23.446 -03:00] [INF] [4] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "ListenBrainz Similarity Provider" "12.1.0.0"
+[2026-10-01 03:28:23.447 -03:00] [INF] [4] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "AudioDB" "12.1.0.0"
+[2026-10-01 03:28:23.720 -03:00] [INF] [4] Emby.Server.Implementations.Library.Search.SearchManager: Registered 0 external search providers: "". Fallback providers: "Database (priority 100)"
+[2026-10-01 03:28:23.731 -03:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: There are 5 migrations for stage AppInitialisation.
+[2026-10-01 03:28:23.732 -03:00] [INF] [4] InternalCodeMigration: Perform migration "20250420090000_AddDefaultPluginRepository"
+[2026-10-01 03:28:23.748 -03:00] [INF] [4] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Saving system configuration
+[2026-10-01 03:28:23.751 -03:00] [INF] [4] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/cache"
+[2026-10-01 03:28:23.753 -03:00] [INF] [4] InternalCodeMigration: Migration "20250420090000_AddDefaultPluginRepository" was successfully applied
+[2026-10-01 03:28:23.761 -03:00] [INF] [4] InternalCodeMigration: Perform migration "20250420110000_ReaddDefaultPluginRepository"
+[2026-10-01 03:28:23.763 -03:00] [INF] [4] InternalCodeMigration: Migration "20250420110000_ReaddDefaultPluginRepository" was successfully applied
+[2026-10-01 03:28:23.770 -03:00] [INF] [4] InternalCodeMigration: Perform migration "20250420160000_AddDefaultCastReceivers"
+[2026-10-01 03:28:23.773 -03:00] [INF] [4] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Saving system configuration
+[2026-10-01 03:28:23.776 -03:00] [INF] [4] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/cache"
+[2026-10-01 03:28:23.777 -03:00] [INF] [4] InternalCodeMigration: Migration "20250420160000_AddDefaultCastReceivers" was successfully applied
+[2026-10-01 03:28:23.785 -03:00] [INF] [4] InternalCodeMigration: Perform migration "20250420170000_UpdateDefaultPluginRepository"
+[2026-10-01 03:28:23.788 -03:00] [INF] [4] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Saving system configuration
+[2026-10-01 03:28:23.789 -03:00] [INF] [4] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/cache"
+[2026-10-01 03:28:23.791 -03:00] [INF] [4] InternalCodeMigration: Migration "20250420170000_UpdateDefaultPluginRepository" was successfully applied
+[2026-10-01 03:28:23.798 -03:00] [INF] [4] InternalCodeMigration: Perform migration "20250420230000_MoveTrickplayFiles"
+[2026-10-01 03:28:26.650 -03:00] [INF] [4] Jellyfin.Server.Migrations.Routines.MoveTrickplayFiles: Checked: 5000 - Moved: 0 - Time: 00:00:02.8462760
+[2026-10-01 03:28:26.651 -03:00] [INF] [4] Jellyfin.Server.Migrations.Routines.MoveTrickplayFiles: Moved 0 items in 00:00:02.8481216
+[2026-10-01 03:28:26.657 -03:00] [INF] [4] InternalCodeMigration: Migration "20250420230000_MoveTrickplayFiles" was successfully applied
+[2026-10-01 03:28:26.670 -03:00] [INF] [4] Main: Attempt to cleanup JellyfinDb backup.
+[2026-10-01 03:28:26.674 -03:00] [INF] [4] Main: Migrations have been applied, optimizing the database... This might take a while
+[2026-10-01 03:28:26.772 -03:00] [INF] [4] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: jellyfin.db optimized successfully!
+[2026-10-01 03:28:26.982 -03:00] [INF] [11] Main: Kestrel is listening on "0.0.0.0"
+[2026-10-01 03:28:27.092 -03:00] [WRN] [11] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: No XML encryptor configured. Key {21aabec4-32f9-425a-8455-f8d9e26a23c4} may be persisted to storage in unencrypted form.
+[2026-10-01 03:28:30.494 -03:00] [WRN] [11] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: The WebRootPath was not found: "/wwwroot". Static files may be unavailable.
+[2026-10-01 03:28:33.617 -03:00] [INF] [11] Emby.Server.Implementations.ApplicationHost: Running startup tasks
+[2026-10-01 03:28:34.013 -03:00] [INF] [11] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Generate Trickplay Images" set to fire at 2026-10-02 03:00:00.000 -03:00, which is 23:31:25.9869937 from now.
+[2026-10-01 03:28:34.034 -03:00] [INF] [11] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Extract Chapter Images" set to fire at 2026-10-02 02:00:00.000 -03:00, which is 22:31:25.9651480 from now.
+[2026-10-01 03:28:34.422 -03:00] [INF] [11] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Found ffmpeg version "8.1.2"
+[2026-10-01 03:28:34.643 -03:00] [INF] [11] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "decoders": ["libdav1d", "av1", "av1_cuvid", "av1_qsv", "h264", "h264_qsv", "h264_cuvid", "hevc", "hevc_qsv", "hevc_cuvid", "mpeg2video", "mpeg2_qsv", "mpeg2_cuvid", "mpeg4", "mpeg4_cuvid", "msmpeg4", "vc1_qsv", "vc1_cuvid", "vp8", "libvpx", "vp8_cuvid", "vp8_qsv", "vp9", "libvpx-vp9", "vp9_cuvid", "vp9_qsv", "aac", "ac3", "ac4", "dca", "flac", "mp3", "truehd"]
+[2026-10-01 03:28:34.698 -03:00] [INF] [11] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "encoders": ["libsvtav1", "av1_nvenc", "av1_qsv", "av1_amf", "av1_vaapi", "libx264", "h264_amf", "h264_nvenc", "h264_qsv", "h264_v4l2m2m", "h264_vaapi", "libx265", "hevc_amf", "hevc_nvenc", "hevc_qsv", "hevc_vaapi", "mjpeg_qsv", "mjpeg_vaapi", "aac", "libfdk_aac", "ac3", "alac", "dca", "flac", "libmp3lame", "libopus", "truehd", "libvorbis", "srt"]
+[2026-10-01 03:28:34.763 -03:00] [INF] [11] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available filters: ["bwdif_cuda", "bwdif_opencl", "deinterlace_qsv", "deinterlace_vaapi", "flip_vulkan", "hwupload_cuda", "hwupload_vaapi", "libplacebo", "overlay_opencl", "overlay_qsv", "overlay_vaapi", "overlay_vulkan", "overlay_cuda", "procamp_vaapi", "scale_cuda", "scale_opencl", "scale_qsv", "scale_vaapi", "scale_vulkan", "tonemapx", "tonemap_cuda", "tonemap_opencl", "tonemap_vaapi", "transpose_cuda", "transpose_opencl", "transpose_vaapi", "transpose_vulkan", "vpp_qsv", "yadif_cuda", "yadif_opencl", "zscale", "alphasrc"]
+[2026-10-01 03:28:35.578 -03:00] [INF] [11] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available hwaccel types: ["cuda", "vaapi", "qsv", "drm", "opencl", "vulkan", "amf"]
+[2026-10-01 03:28:37.168 -03:00] [INF] [21] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Transcode Directory" Completed after 0 minute(s) and 0 seconds
+[2026-10-01 03:28:37.624 -03:00] [INF] [11] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: FFmpeg: "/usr/lib/jellyfin-ffmpeg/ffmpeg"
+[2026-10-01 03:28:37.634 -03:00] [INF] [11] Emby.Server.Implementations.ApplicationHost: ServerId: "91b5f3c366924e93b722a24d118b2ec3"
+[2026-10-01 03:28:37.635 -03:00] [INF] [11] Emby.Server.Implementations.ApplicationHost: Core startup complete
+[2026-10-01 03:28:37.635 -03:00] [INF] [11] Main: Startup complete 0:00:36.3737076
+[2026-10-01 03:28:39.943 -03:00] [INF] [7] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Update Plugins" Completed after 0 minute(s) and 2 seconds
+[2026-10-01 03:29:42.197 -03:00] [ERR] [15] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:29:43.291 -03:00] [ERR] [23] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:29:44.800 -03:00] [ERR] [15] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:29:47.058 -03:00] [ERR] [23] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:29:50.451 -03:00] [ERR] [17] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:29:55.529 -03:00] [ERR] [23] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:30:03.139 -03:00] [ERR] [23] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:30:14.549 -03:00] [ERR] [17] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:30:20.573 -03:00] [ERR] [24] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:30:21.644 -03:00] [ERR] [23] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:30:23.286 -03:00] [ERR] [23] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:30:25.546 -03:00] [ERR] [24] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:30:28.948 -03:00] [ERR] [17] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:30:31.674 -03:00] [ERR] [17] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:30:34.021 -03:00] [ERR] [23] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:30:41.624 -03:00] [ERR] [23] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:30:53.146 -03:00] [ERR] [23] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:30:57.386 -03:00] [ERR] [24] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:31:03.948 -03:00] [INF] [24] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Saving system configuration
+[2026-10-01 03:31:03.950 -03:00] [INF] [24] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/cache"
+[2026-10-01 03:31:04.165 -03:00] [WRN] [3] Jellyfin.Server.Implementations.Users.UserManager: No users, creating one with username "root"
+[2026-10-01 03:31:05.113 -03:00] [WRN] [3] Microsoft.EntityFrameworkCore.Query: The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+[2026-10-01 03:31:10.254 -03:00] [ERR] [17] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:31:35.900 -03:00] [ERR] [29] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:31:35.969 -03:00] [ERR] [30] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:32:07.473 -03:00] [ERR] [29] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:32:27.710 -03:00] [ERR] [29] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:32:33.650 -03:00] [ERR] [32] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:33:05.155 -03:00] [ERR] [30] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:33:54.221 -03:00] [ERR] [29] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:34:00.155 -03:00] [ERR] [26] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:35:14.913 -03:00] [ERR] [24] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:35:48.425 -03:00] [WRN] [27] MediaBrowser.Controller.Entities.BaseItem: Library folder "/config/data/playlists" is inaccessible or empty, skipping
+[2026-10-01 03:35:49.971 -03:00] [INF] [25] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/media/Filmes"
+[2026-10-01 03:36:09.907 -03:00] [ERR] [25] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:36:14.962 -03:00] [ERR] [28] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:37:09.804 -03:00] [INF] [28] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/media/Filmes"
+[2026-10-01 03:37:09.860 -03:00] [WRN] [28] MediaBrowser.Controller.Entities.BaseItem: Library folder "/config/data/playlists" is inaccessible or empty, skipping
+[2026-10-01 03:37:11.028 -03:00] [INF] [6] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/media/Filmes"
+[2026-10-01 03:37:11.041 -03:00] [INF] [17] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/media/Series"
+[2026-10-01 03:37:14.986 -03:00] [ERR] [35] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:37:44.258 -03:00] [INF] [35] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Saving system configuration
+[2026-10-01 03:37:44.260 -03:00] [INF] [35] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/cache"
+[2026-10-01 03:37:55.549 -03:00] [INF] [35] Jellyfin.Networking.Manager.NetworkManager: Defined LAN subnets: ["127.0.0.0/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"]
+[2026-10-01 03:37:55.549 -03:00] [INF] [35] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions: []
+[2026-10-01 03:37:55.550 -03:00] [INF] [35] Jellyfin.Networking.Manager.NetworkManager: Used LAN subnets: ["127.0.0.0/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"]
+[2026-10-01 03:37:55.550 -03:00] [INF] [35] Jellyfin.Networking.Manager.NetworkManager: Filtered interface addresses: ["127.0.0.1", "172.19.0.2"]
+[2026-10-01 03:37:55.550 -03:00] [INF] [35] Jellyfin.Networking.Manager.NetworkManager: Bind Addresses ["0.0.0.0"]
+[2026-10-01 03:37:55.550 -03:00] [INF] [35] Jellyfin.Networking.Manager.NetworkManager: Remote IP filter is "Allowlist"
+[2026-10-01 03:37:55.550 -03:00] [INF] [35] Jellyfin.Networking.Manager.NetworkManager: Filtered subnets: []
+[2026-10-01 03:38:07.224 -03:00] [INF] [35] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Saving system configuration
+[2026-10-01 03:38:07.226 -03:00] [INF] [35] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/cache"
+[2026-10-01 03:38:07.246 -03:00] [INF] [35] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/media/Filmes"
+[2026-10-01 03:38:07.247 -03:00] [INF] [35] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/media/Series"
+[2026-10-01 03:38:07.254 -03:00] [INF] [35] Emby.Server.Implementations.Library.LibraryManager: Validating media library
+[2026-10-01 03:38:07.284 -03:00] [WRN] [35] MediaBrowser.Controller.Entities.BaseItem: Library folder "/config/data/playlists" is inaccessible or empty, skipping
+[2026-10-01 03:38:07.375 -03:00] [WRN] [17] MediaBrowser.Controller.Entities.BaseItem: Library folder "/config/data/playlists" is inaccessible or empty, skipping
+[2026-10-01 03:38:10.129 -03:00] [INF] [41] Jellyfin.Api.Auth.CustomAuthenticationHandler: "CustomAuthentication" was not authenticated. Failure message: "Invalid token."
+[2026-10-01 03:38:14.147 -03:00] [INF] [17] Jellyfin.Server.Implementations.Trickplay.TrickplayManager: Creating trickplay files at 320 width, for "/media/Filmes/Aposta de Alto Risco 2026/Aposta de Alto Risco 2026.mkv" [ID: 75623fbc-fd3c-d3e5-408a-e927e90b1aef]
+[2026-10-01 03:38:14.188 -03:00] [INF] [17] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Trickplay generation: "/usr/lib/jellyfin-ffmpeg/ffmpeg -loglevel error -threads 1 -i file:\"/media/Filmes/Aposta de Alto Risco 2026/Aposta de Alto Risco 2026.mkv\" -map 0:0 -an -sn -vf \"setpts=N/23.976/TB,fps=0.10000000149011612,setparams=color_primaries=bt709:color_trc=bt709:colorspace=bt709,scale=trunc(min(max(iw\,ih*(a*sar))\,320)/2)*2:trunc(ow/(a*sar)/2)*2,format=yuv420p\" -threads 1 -c:v mjpeg -qscale:v 4 -fps_mode passthrough -f image2 \"/tmp/jellyfin/6b09a23579f64084aa048fc6914dba0f/%08d.jpg\""
+[2026-10-01 03:38:15.054 -03:00] [ERR] [41] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:38:15.913 -03:00] [ERR] [36] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Filmes/Aposta de Alto Risco 2026/folder.jpg". Will retry saving to "/config/metadata/library/75/75623fbcfd3cd3e5408ae927e90b1aef/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Filmes/Aposta de Alto Risco 2026/folder.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:38:16.152 -03:00] [ERR] [37] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Filmes/Aposta de Alto Risco 2026/logo.png". Will retry saving to "/config/metadata/library/75/75623fbcfd3cd3e5408ae927e90b1aef/logo.png"
+System.IO.IOException: Read-only file system : '/media/Filmes/Aposta de Alto Risco 2026/logo.png'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:38:16.463 -03:00] [ERR] [41] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Filmes/Aposta de Alto Risco 2026/landscape.jpg". Will retry saving to "/config/metadata/library/75/75623fbcfd3cd3e5408ae927e90b1aef/landscape.jpg"
+System.IO.IOException: Read-only file system : '/media/Filmes/Aposta de Alto Risco 2026/landscape.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:38:16.891 -03:00] [ERR] [43] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Filmes/Aposta de Alto Risco 2026/backdrop.jpg". Will retry saving to "/config/metadata/library/75/75623fbcfd3cd3e5408ae927e90b1aef/backdrop.jpg"
+System.IO.IOException: Read-only file system : '/media/Filmes/Aposta de Alto Risco 2026/backdrop.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:38:17.952 -03:00] [INF] [41] Jellyfin.Server.Implementations.Users.UserManager: Authentication request for "Petterson" has succeeded.
+[2026-10-01 03:38:17.955 -03:00] [INF] [41] Emby.Server.Implementations.Session.SessionManager: Current/Max sessions for user "Petterson": 0/0
+[2026-10-01 03:38:17.963 -03:00] [INF] [41] Emby.Server.Implementations.Session.SessionManager: Creating new access token for user f5c965d4-ffd8-4ddd-80c9-b5d987b984ba
+[2026-10-01 03:38:25.757 -03:00] [ERR] [40] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Filmes/Corra Que a Polícia Vem Aí 2025/folder.jpg". Will retry saving to "/config/metadata/library/42/424d418de38e525f5532174f33460bce/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Filmes/Corra Que a Polícia Vem Aí 2025/folder.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:38:26.240 -03:00] [ERR] [43] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Filmes/Corra Que a Polícia Vem Aí 2025/logo.png". Will retry saving to "/config/metadata/library/42/424d418de38e525f5532174f33460bce/logo.png"
+System.IO.IOException: Read-only file system : '/media/Filmes/Corra Que a Polícia Vem Aí 2025/logo.png'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:38:26.675 -03:00] [ERR] [38] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Filmes/Corra Que a Polícia Vem Aí 2025/landscape.jpg". Will retry saving to "/config/metadata/library/42/424d418de38e525f5532174f33460bce/landscape.jpg"
+System.IO.IOException: Read-only file system : '/media/Filmes/Corra Que a Polícia Vem Aí 2025/landscape.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:38:27.186 -03:00] [ERR] [38] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Filmes/Corra Que a Polícia Vem Aí 2025/backdrop.jpg". Will retry saving to "/config/metadata/library/42/424d418de38e525f5532174f33460bce/backdrop.jpg"
+System.IO.IOException: Read-only file system : '/media/Filmes/Corra Que a Polícia Vem Aí 2025/backdrop.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:38:34.290 -03:00] [INF] [37] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "Good Fortune 2025" at "/media/Filmes/Good Fortune 2025/Good Fortune 2025.mp4"
+[2026-10-01 03:38:37.924 -03:00] [INF] [36] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "Good Fortune 2025" at "/media/Filmes/Good Fortune 2025/Good Fortune 2025.mp4"
+[2026-10-01 03:38:40.062 -03:00] [INF] [36] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "Good Fortune 2025" at "/media/Filmes/Good Fortune 2025/Good Fortune 2025.mp4"
+[2026-10-01 03:38:43.013 -03:00] [INF] [40] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "Good Fortune 2025" at "/media/Filmes/Good Fortune 2025/Good Fortune 2025.mp4"
+[2026-10-01 03:38:47.425 -03:00] [INF] [34] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "Good Fortune 2025" at "/media/Filmes/Good Fortune 2025/Good Fortune 2025.mp4"
+[2026-10-01 03:38:51.195 -03:00] [INF] [34] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "Good Fortune 2025" at "/media/Filmes/Good Fortune 2025/Good Fortune 2025.mp4"
+[2026-10-01 03:38:52.363 -03:00] [INF] [34] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "Good Fortune 2025" at "/media/Filmes/Good Fortune 2025/Good Fortune 2025.mp4"
+[2026-10-01 03:38:54.224 -03:00] [INF] [34] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "Good Fortune 2025" at "/media/Filmes/Good Fortune 2025/Good Fortune 2025.mp4"
+[2026-10-01 03:38:55.218 -03:00] [INF] [34] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "Good Fortune 2025" at "/media/Filmes/Good Fortune 2025/Good Fortune 2025.mp4"
+[2026-10-01 03:38:56.415 -03:00] [INF] [34] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "Good Fortune 2025" at "/media/Filmes/Good Fortune 2025/Good Fortune 2025.mp4"
+[2026-10-01 03:38:59.840 -03:00] [ERR] [23] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Filmes/Good Fortune 2025/folder.jpg". Will retry saving to "/config/metadata/library/6e/6ec62c05d198ce54a0c575798018ec1a/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Filmes/Good Fortune 2025/folder.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:39:00.145 -03:00] [ERR] [23] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Filmes/Good Fortune 2025/logo.png". Will retry saving to "/config/metadata/library/6e/6ec62c05d198ce54a0c575798018ec1a/logo.png"
+System.IO.IOException: Read-only file system : '/media/Filmes/Good Fortune 2025/logo.png'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:39:00.470 -03:00] [ERR] [40] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Filmes/Good Fortune 2025/landscape.jpg". Will retry saving to "/config/metadata/library/6e/6ec62c05d198ce54a0c575798018ec1a/landscape.jpg"
+System.IO.IOException: Read-only file system : '/media/Filmes/Good Fortune 2025/landscape.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:39:01.065 -03:00] [ERR] [40] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Filmes/Good Fortune 2025/backdrop.jpg". Will retry saving to "/config/metadata/library/6e/6ec62c05d198ce54a0c575798018ec1a/backdrop.jpg"
+System.IO.IOException: Read-only file system : '/media/Filmes/Good Fortune 2025/backdrop.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:39:08.018 -03:00] [INF] [36] MediaBrowser.Providers.TV.SeriesMetadataService: Creating Season "Temporada 1" entry for "Brothers 1ª Temporada"
+[2026-10-01 03:39:09.551 -03:00] [INF] [36] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E01 - TORRENTDOSFILMES" at "/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv"
+[2026-10-01 03:39:13.148 -03:00] [INF] [36] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E01 - TORRENTDOSFILMES" at "/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv"
+[2026-10-01 03:39:15.325 -03:00] [INF] [27] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "192.168.1.9" request
+[2026-10-01 03:39:15.436 -03:00] [INF] [33] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "192.168.1.9" request
+[2026-10-01 03:39:21.777 -03:00] [ERR] [27] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/Brothers 1ª Temporada/Brothers S01E01-thumb.jpg". Will retry saving to "/config/metadata/library/ec/ecf1b9fa054ff23c90329cdd8fab2523/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/Brothers 1ª Temporada/Brothers S01E01-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:39:22.743 -03:00] [INF] [23] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E02 - TORRENTDOSFILMES" at "/media/Series/Brothers 1ª Temporada/Brothers S01E02.mkv"
+[2026-10-01 03:39:24.558 -03:00] [ERR] [23] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Token is required". URL "GET" "/socket".
+[2026-10-01 03:39:27.124 -03:00] [INF] [23] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E02 - TORRENTDOSFILMES" at "/media/Series/Brothers 1ª Temporada/Brothers S01E02.mkv"
+[2026-10-01 03:39:33.325 -03:00] [INF] [23] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E02 - TORRENTDOSFILMES" at "/media/Series/Brothers 1ª Temporada/Brothers S01E02.mkv"
+[2026-10-01 03:39:38.462 -03:00] [INF] [36] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E02 - TORRENTDOSFILMES" at "/media/Series/Brothers 1ª Temporada/Brothers S01E02.mkv"
+[2026-10-01 03:39:48.461 -03:00] [ERR] [36] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/Brothers 1ª Temporada/Brothers S01E02-thumb.jpg". Will retry saving to "/config/metadata/library/37/37d06b99b81087347ecc89181bedfb69/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/Brothers 1ª Temporada/Brothers S01E02-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:39:49.538 -03:00] [INF] [23] MediaBrowser.Providers.TV.SeriesMetadataService: Creating Season "Temporada 2" entry for "ONE PIECE - A Série 2ª Temporada"
+[2026-10-01 03:39:50.741 -03:00] [INF] [27] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E01 - BLUDV.TO" at "/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E01.mkv"
+[2026-10-01 03:39:53.731 -03:00] [INF] [33] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E01 - BLUDV.TO" at "/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E01.mkv"
+[2026-10-01 03:39:58.079 -03:00] [ERR] [23] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E01-thumb.jpg". Will retry saving to "/config/metadata/library/76/76ab12e5e7caa122b2fc412c32a05ca6/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E01-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:39:58.764 -03:00] [INF] [23] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E02 - BLUDV.TO" at "/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E02.mkv"
+[2026-10-01 03:40:00.881 -03:00] [INF] [33] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E02 - BLUDV.TO" at "/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E02.mkv"
+[2026-10-01 03:40:04.489 -03:00] [ERR] [33] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E02-thumb.jpg". Will retry saving to "/config/metadata/library/54/544b753442b941e3f29523269d8c5b53/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E02-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:40:04.955 -03:00] [INF] [33] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E03 - BLUDV.TO" at "/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E03.mkv"
+[2026-10-01 03:40:06.558 -03:00] [INF] [33] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E03 - BLUDV.TO" at "/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E03.mkv"
+[2026-10-01 03:40:09.017 -03:00] [ERR] [27] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E03-thumb.jpg". Will retry saving to "/config/metadata/library/1a/1a9f57626288c28fd548535b3aa4fd78/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E03-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:40:09.277 -03:00] [INF] [23] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E04 - BLUDV.TO" at "/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E04.mkv"
+[2026-10-01 03:40:10.511 -03:00] [INF] [33] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E04 - BLUDV.TO" at "/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E04.mkv"
+[2026-10-01 03:40:12.642 -03:00] [ERR] [27] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E04-thumb.jpg". Will retry saving to "/config/metadata/library/b7/b765c20e0bb37e4bf2ecceb2526644f4/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E04-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:40:12.905 -03:00] [INF] [27] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E05 - BLUDV.TO" at "/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E05.mkv"
+[2026-10-01 03:40:14.618 -03:00] [INF] [23] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E05 - BLUDV.TO" at "/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E05.mkv"
+[2026-10-01 03:40:16.729 -03:00] [ERR] [23] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E05-thumb.jpg". Will retry saving to "/config/metadata/library/1f/1f2535753781b64d80b6e8c525349c5a/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E05-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:40:16.948 -03:00] [INF] [33] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E06 - BLUDV.TO" at "/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E06.mkv"
+[2026-10-01 03:40:18.124 -03:00] [INF] [33] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E06 - BLUDV.TO" at "/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E06.mkv"
+[2026-10-01 03:40:20.356 -03:00] [ERR] [33] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E06-thumb.jpg". Will retry saving to "/config/metadata/library/a1/a13a474adec12c8288fa7e6c17c6e23a/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E06-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:40:20.748 -03:00] [INF] [33] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E07 - BLUDV.TO" at "/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E07.mkv"
+[2026-10-01 03:40:22.158 -03:00] [INF] [33] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E07 - BLUDV.TO" at "/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E07.mkv"
+[2026-10-01 03:40:24.612 -03:00] [ERR] [33] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E07-thumb.jpg". Will retry saving to "/config/metadata/library/26/266b2fc8ac17c51c2e17ff7ae4f8ef1b/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E07-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:40:24.895 -03:00] [INF] [23] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E08 - BLUDV.TO" at "/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E08.mkv"
+[2026-10-01 03:40:26.254 -03:00] [INF] [27] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E08 - BLUDV.TO" at "/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E08.mkv"
+[2026-10-01 03:40:27.472 -03:00] [INF] [23] Emby.Server.Implementations.Session.SessionWebSocketListener: Lost 1 WebSockets.
+[2026-10-01 03:40:28.793 -03:00] [ERR] [27] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E08-thumb.jpg". Will retry saving to "/config/metadata/library/ea/ea9bd578fc8e401325878aacdbb1e051/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/ONE PIECE - A Série 2ª Temporada/ONE PIECE - A Série S02E08-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:40:29.591 -03:00] [INF] [27] MediaBrowser.Providers.TV.SeriesMetadataService: Creating Season "Temporada 1" entry for "Pluribus 1ª Temporada"
+[2026-10-01 03:40:30.147 -03:00] [INF] [27] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E01 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E01.mkv"
+[2026-10-01 03:40:32.054 -03:00] [INF] [27] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E01 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E01.mkv"
+[2026-10-01 03:40:34.973 -03:00] [ERR] [23] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/Pluribus 1ª Temporada/Pluribus S01E01-thumb.jpg". Will retry saving to "/config/metadata/library/84/84092d01127b5daad46ab8c4f0725fb4/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/Pluribus 1ª Temporada/Pluribus S01E01-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:40:35.333 -03:00] [INF] [23] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E02 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E02.mkv"
+[2026-10-01 03:40:37.765 -03:00] [INF] [33] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E02 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E02.mkv"
+[2026-10-01 03:40:40.568 -03:00] [INF] [33] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E02 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E02.mkv"
+[2026-10-01 03:40:44.406 -03:00] [INF] [27] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E02 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E02.mkv"
+[2026-10-01 03:40:49.093 -03:00] [ERR] [33] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/Pluribus 1ª Temporada/Pluribus S01E02-thumb.jpg". Will retry saving to "/config/metadata/library/ea/ea7cda5f16990f08c170eb5fe8cc17f6/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/Pluribus 1ª Temporada/Pluribus S01E02-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:40:49.395 -03:00] [INF] [23] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E03 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E03.mkv"
+[2026-10-01 03:40:51.680 -03:00] [INF] [23] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E03 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E03.mkv"
+[2026-10-01 03:40:53.845 -03:00] [INF] [23] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E03 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E03.mkv"
+[2026-10-01 03:40:55.011 -03:00] [INF] [23] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E03 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E03.mkv"
+[2026-10-01 03:40:59.146 -03:00] [ERR] [27] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/Pluribus 1ª Temporada/Pluribus S01E03-thumb.jpg". Will retry saving to "/config/metadata/library/1f/1f057f985c5f42fbee2e1348ebd6d06f/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/Pluribus 1ª Temporada/Pluribus S01E03-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:40:59.481 -03:00] [INF] [33] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E04 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E04.mkv"
+[2026-10-01 03:41:01.533 -03:00] [INF] [27] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E04 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E04.mkv"
+[2026-10-01 03:41:02.544 -03:00] [INF] [27] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E04 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E04.mkv"
+[2026-10-01 03:41:04.208 -03:00] [INF] [42] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E04 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E04.mkv"
+[2026-10-01 03:41:08.876 -03:00] [ERR] [42] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/Pluribus 1ª Temporada/Pluribus S01E04-thumb.jpg". Will retry saving to "/config/metadata/library/6a/6acea3773ec6196ddf2796bdf58a41c2/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/Pluribus 1ª Temporada/Pluribus S01E04-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:41:09.264 -03:00] [INF] [27] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E05 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E05.mkv"
+[2026-10-01 03:41:11.410 -03:00] [INF] [27] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E05 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E05.mkv"
+[2026-10-01 03:41:13.112 -03:00] [INF] [27] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E05 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E05.mkv"
+[2026-10-01 03:41:15.797 -03:00] [INF] [42] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E05 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E05.mkv"
+[2026-10-01 03:41:21.246 -03:00] [ERR] [27] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/Pluribus 1ª Temporada/Pluribus S01E05-thumb.jpg". Will retry saving to "/config/metadata/library/e5/e57c6405fa27447198ee9f067dded066/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/Pluribus 1ª Temporada/Pluribus S01E05-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:41:21.589 -03:00] [INF] [42] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E07 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E07.mkv"
+[2026-10-01 03:41:24.522 -03:00] [INF] [42] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E07 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E07.mkv"
+[2026-10-01 03:41:26.225 -03:00] [INF] [42] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E07 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E07.mkv"
+[2026-10-01 03:41:29.380 -03:00] [INF] [33] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E07 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E07.mkv"
+[2026-10-01 03:41:37.039 -03:00] [ERR] [33] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/Pluribus 1ª Temporada/Pluribus S01E07-thumb.jpg". Will retry saving to "/config/metadata/library/b7/b7134e47131c6c626a49b7164de38749/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/Pluribus 1ª Temporada/Pluribus S01E07-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:41:37.659 -03:00] [INF] [27] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E08 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E08.mkv"
+[2026-10-01 03:41:40.649 -03:00] [INF] [27] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E08 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E08.mkv"
+[2026-10-01 03:41:45.021 -03:00] [INF] [27] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E08 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E08.mkv"
+[2026-10-01 03:41:46.773 -03:00] [INF] [33] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E08 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E08.mkv"
+[2026-10-01 03:41:50.151 -03:00] [ERR] [27] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/Pluribus 1ª Temporada/Pluribus S01E08-thumb.jpg". Will retry saving to "/config/metadata/library/9a/9ae1c79e332ba0e31152d3b989bc7250/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/Pluribus 1ª Temporada/Pluribus S01E08-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:41:50.804 -03:00] [INF] [27] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E09 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E09.mkv"
+[2026-10-01 03:41:53.709 -03:00] [INF] [27] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E09 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E09.mkv"
+[2026-10-01 03:41:55.942 -03:00] [INF] [27] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E09 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E09.mkv"
+[2026-10-01 03:42:00.172 -03:00] [INF] [27] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E09 - BLUDV.TO" at "/media/Series/Pluribus 1ª Temporada/Pluribus S01E09.mkv"
+[2026-10-01 03:42:06.375 -03:00] [ERR] [27] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/Pluribus 1ª Temporada/Pluribus S01E09-thumb.jpg". Will retry saving to "/config/metadata/library/ee/ee7a8bc3cba54dad6f7f355cefc0cf47/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/Pluribus 1ª Temporada/Pluribus S01E09-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:42:07.515 -03:00] [INF] [25] MediaBrowser.Providers.TV.SeriesMetadataService: Creating Season "Temporada 1" entry for "Terra da Mafia 1ª Temporada"
+[2026-10-01 03:42:10.297 -03:00] [ERR] [42] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/Terra da Mafia 1ª Temporada/MobLand.S01E06-ao-09.1080p.WEB-DL.DUAL.5.1/MobLand.S01E06.1080p.WEB-DL.DUAL.5.1-thumb.jpg". Will retry saving to "/config/metadata/library/7c/7c722bd6ec28a07fc83ff1067291b623/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/Terra da Mafia 1ª Temporada/MobLand.S01E06-ao-09.1080p.WEB-DL.DUAL.5.1/MobLand.S01E06.1080p.WEB-DL.DUAL.5.1-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:42:12.176 -03:00] [ERR] [25] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/Terra da Mafia 1ª Temporada/MobLand.S01E06-ao-09.1080p.WEB-DL.DUAL.5.1/MobLand.S01E07.1080p.WEB-DL.DUAL.5.1-thumb.jpg". Will retry saving to "/config/metadata/library/8a/8a81403caa08353cee480816b5ce8dbb/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/Terra da Mafia 1ª Temporada/MobLand.S01E06-ao-09.1080p.WEB-DL.DUAL.5.1/MobLand.S01E07.1080p.WEB-DL.DUAL.5.1-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:42:13.795 -03:00] [ERR] [43] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/Terra da Mafia 1ª Temporada/MobLand.S01E06-ao-09.1080p.WEB-DL.DUAL.5.1/MobLand.S01E08.1080p.WEB-DL.DUAL.5.1-thumb.jpg". Will retry saving to "/config/metadata/library/f0/f079db60020e7a00c6ccdb8572fe2ec4/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/Terra da Mafia 1ª Temporada/MobLand.S01E06-ao-09.1080p.WEB-DL.DUAL.5.1/MobLand.S01E08.1080p.WEB-DL.DUAL.5.1-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:42:15.788 -03:00] [ERR] [43] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/Terra da Mafia 1ª Temporada/MobLand.S01E06-ao-09.1080p.WEB-DL.DUAL.5.1/MobLand.S01E09.1080p.WEB-DL.DUAL.5.1-thumb.jpg". Will retry saving to "/config/metadata/library/1b/1bcd24bc17fbc32d3d61b5d851a0361d/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/Terra da Mafia 1ª Temporada/MobLand.S01E06-ao-09.1080p.WEB-DL.DUAL.5.1/MobLand.S01E09.1080p.WEB-DL.DUAL.5.1-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:42:16.122 -03:00] [INF] [42] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E10 - BLUDV.TO" at "/media/Series/Terra da Mafia 1ª Temporada/Terra da Máfia S01E10 WEB-DL 1080p x264 DUAL 5.1/Terra da Máfia S01E10 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:42:18.005 -03:00] [INF] [25] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E10 - BLUDV.TO" at "/media/Series/Terra da Mafia 1ª Temporada/Terra da Máfia S01E10 WEB-DL 1080p x264 DUAL 5.1/Terra da Máfia S01E10 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:42:20.902 -03:00] [INF] [25] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E10 - BLUDV.TO" at "/media/Series/Terra da Mafia 1ª Temporada/Terra da Máfia S01E10 WEB-DL 1080p x264 DUAL 5.1/Terra da Máfia S01E10 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:42:23.541 -03:00] [INF] [25] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E10 - BLUDV.TO" at "/media/Series/Terra da Mafia 1ª Temporada/Terra da Máfia S01E10 WEB-DL 1080p x264 DUAL 5.1/Terra da Máfia S01E10 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:42:26.455 -03:00] [INF] [25] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S01E10 - BLUDV.TO" at "/media/Series/Terra da Mafia 1ª Temporada/Terra da Máfia S01E10 WEB-DL 1080p x264 DUAL 5.1/Terra da Máfia S01E10 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:42:34.019 -03:00] [ERR] [43] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/Terra da Mafia 1ª Temporada/Terra da Máfia S01E10 WEB-DL 1080p x264 DUAL 5.1/Terra da Máfia S01E10 WEB-DL 1080p x264 DUAL 5.1-thumb.jpg". Will retry saving to "/config/metadata/library/aa/aa2e16eb684ab00d8d72a4fa4ef0a9ce/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/Terra da Mafia 1ª Temporada/Terra da Máfia S01E10 WEB-DL 1080p x264 DUAL 5.1/Terra da Máfia S01E10 WEB-DL 1080p x264 DUAL 5.1-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:42:44.822 -03:00] [WRN] [42] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: I-frame image extraction failed, will attempt standard way. Input: "file:\"/media/Series/Terra da Mafia 1ª Temporada/Terra.da.Máfia.S01E01-03.WEB-DL.1080p.x264.DUAL.5.1-SF/Terra.da.Máfia.S01E01.WEB-DL.1080p.x264.DUAL.5.1-SF.mkv\""
+MediaBrowser.Common.FfmpegException: ffmpeg image extraction timed out for file:"/media/Series/Terra da Mafia 1ª Temporada/Terra.da.Máfia.S01E01-03.WEB-DL.1080p.x264.DUAL.5.1-SF/Terra.da.Máfia.S01E01.WEB-DL.1080p.x264.DUAL.5.1-SF.mkv" after 10000ms
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Diagnostics.Process.WaitForExitAsync(CancellationToken cancellationToken)
+   at MediaBrowser.Common.Extensions.ProcessExtensions.WaitForExitAsync(Process process, TimeSpan timeout)
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImageInternal(String inputPath, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, Nullable`1 threedFormat, Nullable`1 offset, Boolean useIFrame, Nullable`1 targetFormat, Boolean isAudio, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImageInternal(String inputPath, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, Nullable`1 threedFormat, Nullable`1 offset, Boolean useIFrame, Nullable`1 targetFormat, Boolean isAudio, CancellationToken cancellationToken)
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImage(String inputFile, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, MediaSourceInfo mediaSource, Boolean isAudio, Nullable`1 threedFormat, Nullable`1 offset, Nullable`1 targetFormat, CancellationToken cancellationToken)
+[2026-10-01 03:42:55.015 -03:00] [ERR] [25] MediaBrowser.Providers.TV.EpisodeMetadataService: Error in "Embedded Image Extractor" for "/media/Series/Terra da Mafia 1ª Temporada/Terra.da.Máfia.S01E01-03.WEB-DL.1080p.x264.DUAL.5.1-SF/Terra.da.Máfia.S01E01.WEB-DL.1080p.x264.DUAL.5.1-SF.mkv"
+MediaBrowser.Common.FfmpegException: ffmpeg image extraction timed out for file:"/media/Series/Terra da Mafia 1ª Temporada/Terra.da.Máfia.S01E01-03.WEB-DL.1080p.x264.DUAL.5.1-SF/Terra.da.Máfia.S01E01.WEB-DL.1080p.x264.DUAL.5.1-SF.mkv" after 10000ms
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Diagnostics.Process.WaitForExitAsync(CancellationToken cancellationToken)
+   at MediaBrowser.Common.Extensions.ProcessExtensions.WaitForExitAsync(Process process, TimeSpan timeout)
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImageInternal(String inputPath, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, Nullable`1 threedFormat, Nullable`1 offset, Boolean useIFrame, Nullable`1 targetFormat, Boolean isAudio, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImageInternal(String inputPath, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, Nullable`1 threedFormat, Nullable`1 offset, Boolean useIFrame, Nullable`1 targetFormat, Boolean isAudio, CancellationToken cancellationToken)
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImage(String inputFile, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, MediaSourceInfo mediaSource, Boolean isAudio, Nullable`1 threedFormat, Nullable`1 offset, Nullable`1 targetFormat, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.MediaInfo.EmbeddedImageProvider.ExtractAttachment(Video item, MediaAttachment attachmentStream, MediaSourceInfo mediaSource, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.MediaInfo.EmbeddedImageProvider.GetEmbeddedImage(Video item, ImageType type, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ItemImageProvider.RefreshFromProvider(BaseItem item, IDynamicImageProvider provider, ImageRefreshOptions refreshOptions, TypeOptions savedOptions, List`1 downloadedImages, RefreshResult result, CancellationToken cancellationToken)
+[2026-10-01 03:42:59.840 -03:00] [ERR] [34] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/Terra da Mafia 1ª Temporada/Terra.da.Máfia.S01E01-03.WEB-DL.1080p.x264.DUAL.5.1-SF/Terra.da.Máfia.S01E01.WEB-DL.1080p.x264.DUAL.5.1-SF-thumb.jpg". Will retry saving to "/config/metadata/library/44/4400d1e189983de86dcc7abbf3e45237/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/Terra da Mafia 1ª Temporada/Terra.da.Máfia.S01E01-03.WEB-DL.1080p.x264.DUAL.5.1-SF/Terra.da.Máfia.S01E01.WEB-DL.1080p.x264.DUAL.5.1-SF-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:43:11.959 -03:00] [WRN] [34] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: I-frame image extraction failed, will attempt standard way. Input: "file:\"/media/Series/Terra da Mafia 1ª Temporada/Terra.da.Máfia.S01E01-03.WEB-DL.1080p.x264.DUAL.5.1-SF/Terra.da.Máfia.S01E02.WEB-DL.1080p.x264.DUAL.5.1-SF.mkv\""
+MediaBrowser.Common.FfmpegException: ffmpeg image extraction timed out for file:"/media/Series/Terra da Mafia 1ª Temporada/Terra.da.Máfia.S01E01-03.WEB-DL.1080p.x264.DUAL.5.1-SF/Terra.da.Máfia.S01E02.WEB-DL.1080p.x264.DUAL.5.1-SF.mkv" after 10000ms
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Diagnostics.Process.WaitForExitAsync(CancellationToken cancellationToken)
+   at MediaBrowser.Common.Extensions.ProcessExtensions.WaitForExitAsync(Process process, TimeSpan timeout)
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImageInternal(String inputPath, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, Nullable`1 threedFormat, Nullable`1 offset, Boolean useIFrame, Nullable`1 targetFormat, Boolean isAudio, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImageInternal(String inputPath, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, Nullable`1 threedFormat, Nullable`1 offset, Boolean useIFrame, Nullable`1 targetFormat, Boolean isAudio, CancellationToken cancellationToken)
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImage(String inputFile, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, MediaSourceInfo mediaSource, Boolean isAudio, Nullable`1 threedFormat, Nullable`1 offset, Nullable`1 targetFormat, CancellationToken cancellationToken)
+[2026-10-01 03:43:22.033 -03:00] [ERR] [34] MediaBrowser.Providers.TV.EpisodeMetadataService: Error in "Embedded Image Extractor" for "/media/Series/Terra da Mafia 1ª Temporada/Terra.da.Máfia.S01E01-03.WEB-DL.1080p.x264.DUAL.5.1-SF/Terra.da.Máfia.S01E02.WEB-DL.1080p.x264.DUAL.5.1-SF.mkv"
+MediaBrowser.Common.FfmpegException: ffmpeg image extraction timed out for file:"/media/Series/Terra da Mafia 1ª Temporada/Terra.da.Máfia.S01E01-03.WEB-DL.1080p.x264.DUAL.5.1-SF/Terra.da.Máfia.S01E02.WEB-DL.1080p.x264.DUAL.5.1-SF.mkv" after 10000ms
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Diagnostics.Process.WaitForExitAsync(CancellationToken cancellationToken)
+   at MediaBrowser.Common.Extensions.ProcessExtensions.WaitForExitAsync(Process process, TimeSpan timeout)
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImageInternal(String inputPath, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, Nullable`1 threedFormat, Nullable`1 offset, Boolean useIFrame, Nullable`1 targetFormat, Boolean isAudio, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImageInternal(String inputPath, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, Nullable`1 threedFormat, Nullable`1 offset, Boolean useIFrame, Nullable`1 targetFormat, Boolean isAudio, CancellationToken cancellationToken)
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImage(String inputFile, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, MediaSourceInfo mediaSource, Boolean isAudio, Nullable`1 threedFormat, Nullable`1 offset, Nullable`1 targetFormat, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.MediaInfo.EmbeddedImageProvider.ExtractAttachment(Video item, MediaAttachment attachmentStream, MediaSourceInfo mediaSource, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.MediaInfo.EmbeddedImageProvider.GetEmbeddedImage(Video item, ImageType type, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ItemImageProvider.RefreshFromProvider(BaseItem item, IDynamicImageProvider provider, ImageRefreshOptions refreshOptions, TypeOptions savedOptions, List`1 downloadedImages, RefreshResult result, CancellationToken cancellationToken)
+[2026-10-01 03:43:25.732 -03:00] [ERR] [34] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/Terra da Mafia 1ª Temporada/Terra.da.Máfia.S01E01-03.WEB-DL.1080p.x264.DUAL.5.1-SF/Terra.da.Máfia.S01E02.WEB-DL.1080p.x264.DUAL.5.1-SF-thumb.jpg". Will retry saving to "/config/metadata/library/0a/0a14098e699523433fd9955012219a1b/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/Terra da Mafia 1ª Temporada/Terra.da.Máfia.S01E01-03.WEB-DL.1080p.x264.DUAL.5.1-SF/Terra.da.Máfia.S01E02.WEB-DL.1080p.x264.DUAL.5.1-SF-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:43:36.875 -03:00] [WRN] [43] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: I-frame image extraction failed, will attempt standard way. Input: "file:\"/media/Series/Terra da Mafia 1ª Temporada/Terra.da.Máfia.S01E01-03.WEB-DL.1080p.x264.DUAL.5.1-SF/Terra.da.Máfia.S01E03.WEB-DL.1080p.x264.DUAL.5.1-SF.mkv\""
+MediaBrowser.Common.FfmpegException: ffmpeg image extraction timed out for file:"/media/Series/Terra da Mafia 1ª Temporada/Terra.da.Máfia.S01E01-03.WEB-DL.1080p.x264.DUAL.5.1-SF/Terra.da.Máfia.S01E03.WEB-DL.1080p.x264.DUAL.5.1-SF.mkv" after 10000ms
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Diagnostics.Process.WaitForExitAsync(CancellationToken cancellationToken)
+   at MediaBrowser.Common.Extensions.ProcessExtensions.WaitForExitAsync(Process process, TimeSpan timeout)
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImageInternal(String inputPath, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, Nullable`1 threedFormat, Nullable`1 offset, Boolean useIFrame, Nullable`1 targetFormat, Boolean isAudio, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImageInternal(String inputPath, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, Nullable`1 threedFormat, Nullable`1 offset, Boolean useIFrame, Nullable`1 targetFormat, Boolean isAudio, CancellationToken cancellationToken)
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImage(String inputFile, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, MediaSourceInfo mediaSource, Boolean isAudio, Nullable`1 threedFormat, Nullable`1 offset, Nullable`1 targetFormat, CancellationToken cancellationToken)
+[2026-10-01 03:43:47.053 -03:00] [ERR] [34] MediaBrowser.Providers.TV.EpisodeMetadataService: Error in "Embedded Image Extractor" for "/media/Series/Terra da Mafia 1ª Temporada/Terra.da.Máfia.S01E01-03.WEB-DL.1080p.x264.DUAL.5.1-SF/Terra.da.Máfia.S01E03.WEB-DL.1080p.x264.DUAL.5.1-SF.mkv"
+MediaBrowser.Common.FfmpegException: ffmpeg image extraction timed out for file:"/media/Series/Terra da Mafia 1ª Temporada/Terra.da.Máfia.S01E01-03.WEB-DL.1080p.x264.DUAL.5.1-SF/Terra.da.Máfia.S01E03.WEB-DL.1080p.x264.DUAL.5.1-SF.mkv" after 10000ms
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Diagnostics.Process.WaitForExitAsync(CancellationToken cancellationToken)
+   at MediaBrowser.Common.Extensions.ProcessExtensions.WaitForExitAsync(Process process, TimeSpan timeout)
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImageInternal(String inputPath, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, Nullable`1 threedFormat, Nullable`1 offset, Boolean useIFrame, Nullable`1 targetFormat, Boolean isAudio, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImageInternal(String inputPath, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, Nullable`1 threedFormat, Nullable`1 offset, Boolean useIFrame, Nullable`1 targetFormat, Boolean isAudio, CancellationToken cancellationToken)
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImage(String inputFile, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, MediaSourceInfo mediaSource, Boolean isAudio, Nullable`1 threedFormat, Nullable`1 offset, Nullable`1 targetFormat, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.MediaInfo.EmbeddedImageProvider.ExtractAttachment(Video item, MediaAttachment attachmentStream, MediaSourceInfo mediaSource, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.MediaInfo.EmbeddedImageProvider.GetEmbeddedImage(Video item, ImageType type, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ItemImageProvider.RefreshFromProvider(BaseItem item, IDynamicImageProvider provider, ImageRefreshOptions refreshOptions, TypeOptions savedOptions, List`1 downloadedImages, RefreshResult result, CancellationToken cancellationToken)
+[2026-10-01 03:43:51.505 -03:00] [ERR] [34] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/Terra da Mafia 1ª Temporada/Terra.da.Máfia.S01E01-03.WEB-DL.1080p.x264.DUAL.5.1-SF/Terra.da.Máfia.S01E03.WEB-DL.1080p.x264.DUAL.5.1-SF-thumb.jpg". Will retry saving to "/config/metadata/library/8d/8d3b73c18f0fc307145b87075deb49e8/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/Terra da Mafia 1ª Temporada/Terra.da.Máfia.S01E01-03.WEB-DL.1080p.x264.DUAL.5.1-SF/Terra.da.Máfia.S01E03.WEB-DL.1080p.x264.DUAL.5.1-SF-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:43:59.660 -03:00] [ERR] [43] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/Terra da Mafia 1ª Temporada/Terra da Máfia S01E04-05 WEB-DL 1080p x264 DUAL 5.1/Terra da Máfia S01E04 WEB-DL 1080p x264 DUAL 5.1-thumb.jpg". Will retry saving to "/config/metadata/library/d3/d3e22c3b884c846c62d2b8dbc0369704/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/Terra da Mafia 1ª Temporada/Terra da Máfia S01E04-05 WEB-DL 1080p x264 DUAL 5.1/Terra da Máfia S01E04 WEB-DL 1080p x264 DUAL 5.1-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:44:07.163 -03:00] [INF] [3] Jellyfin.Api.Helpers.MediaInfoHelper: User policy for "Petterson". EnablePlaybackRemuxing: True EnableVideoPlaybackTranscoding: True EnableAudioPlaybackTranscoding: True
+[2026-10-01 03:44:10.773 -03:00] [ERR] [34] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/Terra da Mafia 1ª Temporada/Terra da Máfia S01E04-05 WEB-DL 1080p x264 DUAL 5.1/Terra da Máfia S01E05 WEB-DL 1080p x264 DUAL 5.1-thumb.jpg". Will retry saving to "/config/metadata/library/4d/4d304af5db075ab58af8fd1626de9d44/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/Terra da Mafia 1ª Temporada/Terra da Máfia S01E04-05 WEB-DL 1080p x264 DUAL 5.1/Terra da Máfia S01E05 WEB-DL 1080p x264 DUAL 5.1-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:44:16.801 -03:00] [INF] [34] MediaBrowser.Providers.TV.SeriesMetadataService: Creating Season "Temporada 2" entry for "X-Men '97 2ª Temporada"
+[2026-10-01 03:44:20.707 -03:00] [INF] [3] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E01 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E01 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:44:22.547 -03:00] [INF] [36] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: "/usr/lib/jellyfin-ffmpeg/ffmpeg" "-analyzeduration 200M -probesize 1G -fflags +genpts  -i file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\" -map_metadata -1 -map_chapters -1 -threads 0 -map 0:0 -map 0:1 -map -0:s -codec:v:0 copy -bsf:v h264_mp4toannexb -start_at_zero -codec:a:0 libfdk_aac -ac 2 -ab 225122 -af \"volume=2\" -copyts -avoid_negative_ts disabled -max_muxing_queue_size 2048 -f hls -max_delay 5000000 -hls_time 6 -hls_segment_type fmp4 -hls_fmp4_init_filename \"774dbbe9058c43e293064ddeeae78ad7-1.mp4\" -start_number 0 -hls_segment_filename \"/cache/transcodes/774dbbe9058c43e293064ddeeae78ad7%d.mp4\" -hls_playlist_type vod -hls_list_size 0 -hls_segment_options movflags=+frag_discont+skip_sidx -y \"/cache/transcodes/774dbbe9058c43e293064ddeeae78ad7.m3u8\""
+[2026-10-01 03:44:27.648 -03:00] [INF] [43] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E01 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E01 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:44:35.527 -03:00] [INF] [34] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E01 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E01 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:44:43.295 -03:00] [INF] [34] Emby.Server.Implementations.Session.SessionManager: User "Petterson" started playback of '"S01E01 - TORRENTDOSFILMES"' ("Jellyfin Web" "12.1.0")
+[2026-10-01 03:44:43.392 -03:00] [INF] [43] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: "/usr/lib/jellyfin-ffmpeg/ffmpeg" "-nostdin -y -i file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\" -map 0:3 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/3.srt\" -map 0:4 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/4.srt\" -map 0:5 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/5.srt\" -map 0:6 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/6.srt\" -map 0:7 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/7.srt\" -map 0:8 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/8.srt\" -map 0:9 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/9.srt\" -map 0:10 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/10.srt\" -map 0:11 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/11.srt\" -map 0:12 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/12.srt\" -map 0:13 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/13.srt\" -map 0:14 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/14.srt\" -map 0:15 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/15.srt\" -map 0:16 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/16.srt\" -map 0:17 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/17.srt\" -map 0:18 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/18.srt\" -map 0:19 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/19.srt\" -map 0:20 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/20.srt\" -map 0:21 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/21.srt\" -map 0:22 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/22.srt\" -map 0:23 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/23.srt\" -map 0:24 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/24.srt\" -map 0:25 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/25.srt\" -map 0:26 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/26.srt\" -map 0:27 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/27.srt\" -map 0:28 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/28.srt\" -map 0:29 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/29.srt\" -map 0:30 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/30.srt\" -map 0:31 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/31.srt\" -map 0:32 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/32.srt\" -map 0:33 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/33.srt\" -map 0:34 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/34.srt\" -map 0:35 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/35.srt\" -map 0:36 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/36.srt\" -map 0:37 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/37.srt\" -map 0:38 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/38.srt\" -map 0:39 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/39.srt\" -map 0:40 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/40.srt\" -map 0:41 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/41.srt\" -map 0:42 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/42.srt\" -map 0:43 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/43.srt\" -map 0:44 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/44.srt\" -map 0:45 -an -vn -c:s copy -flush_packets 1 \"/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/45.srt\""
+[2026-10-01 03:44:45.853 -03:00] [WRN] [3] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: I-frame image extraction failed, will attempt standard way. Input: "file:\"/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E01 WEB-DL 1080p x264 DUAL 5.1.mkv\""
+MediaBrowser.Common.FfmpegException: ffmpeg image extraction timed out for file:"/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E01 WEB-DL 1080p x264 DUAL 5.1.mkv" after 10000ms
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Diagnostics.Process.WaitForExitAsync(CancellationToken cancellationToken)
+   at MediaBrowser.Common.Extensions.ProcessExtensions.WaitForExitAsync(Process process, TimeSpan timeout)
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImageInternal(String inputPath, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, Nullable`1 threedFormat, Nullable`1 offset, Boolean useIFrame, Nullable`1 targetFormat, Boolean isAudio, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImageInternal(String inputPath, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, Nullable`1 threedFormat, Nullable`1 offset, Boolean useIFrame, Nullable`1 targetFormat, Boolean isAudio, CancellationToken cancellationToken)
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImage(String inputFile, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, MediaSourceInfo mediaSource, Boolean isAudio, Nullable`1 threedFormat, Nullable`1 offset, Nullable`1 targetFormat, CancellationToken cancellationToken)
+[2026-10-01 03:44:54.809 -03:00] [INF] [27] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E01 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E01 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:45:02.045 -03:00] [INF] [34] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E01 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E01 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:45:11.228 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/3.srt"
+[2026-10-01 03:45:11.233 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/4.srt"
+[2026-10-01 03:45:11.233 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/5.srt"
+[2026-10-01 03:45:11.233 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/6.srt"
+[2026-10-01 03:45:11.233 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/7.srt"
+[2026-10-01 03:45:11.233 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/8.srt"
+[2026-10-01 03:45:11.233 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/9.srt"
+[2026-10-01 03:45:11.233 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/10.srt"
+[2026-10-01 03:45:11.233 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/11.srt"
+[2026-10-01 03:45:11.233 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/12.srt"
+[2026-10-01 03:45:11.233 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/13.srt"
+[2026-10-01 03:45:11.233 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/14.srt"
+[2026-10-01 03:45:11.233 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/15.srt"
+[2026-10-01 03:45:11.233 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/16.srt"
+[2026-10-01 03:45:11.234 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/17.srt"
+[2026-10-01 03:45:11.234 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/18.srt"
+[2026-10-01 03:45:11.234 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/19.srt"
+[2026-10-01 03:45:11.234 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/20.srt"
+[2026-10-01 03:45:11.234 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/21.srt"
+[2026-10-01 03:45:11.234 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/22.srt"
+[2026-10-01 03:45:11.234 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/23.srt"
+[2026-10-01 03:45:11.234 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/24.srt"
+[2026-10-01 03:45:11.234 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/25.srt"
+[2026-10-01 03:45:11.234 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/26.srt"
+[2026-10-01 03:45:11.234 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/27.srt"
+[2026-10-01 03:45:11.234 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/28.srt"
+[2026-10-01 03:45:11.234 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/29.srt"
+[2026-10-01 03:45:11.234 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/30.srt"
+[2026-10-01 03:45:11.234 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/31.srt"
+[2026-10-01 03:45:11.234 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/32.srt"
+[2026-10-01 03:45:11.234 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/33.srt"
+[2026-10-01 03:45:11.234 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/34.srt"
+[2026-10-01 03:45:11.234 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/35.srt"
+[2026-10-01 03:45:11.238 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/36.srt"
+[2026-10-01 03:45:11.238 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/37.srt"
+[2026-10-01 03:45:11.238 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/38.srt"
+[2026-10-01 03:45:11.238 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/39.srt"
+[2026-10-01 03:45:11.238 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/40.srt"
+[2026-10-01 03:45:11.238 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/41.srt"
+[2026-10-01 03:45:11.238 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/42.srt"
+[2026-10-01 03:45:11.238 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/43.srt"
+[2026-10-01 03:45:11.238 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/44.srt"
+[2026-10-01 03:45:11.238 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/media/Series/Brothers 1ª Temporada/Brothers S01E01.mkv\"" to "/config/data/subtitles/ec/ecf1b9fa-054f-f23c-9032-9cdd8fab2523/45.srt"
+[2026-10-01 03:45:12.115 -03:00] [WRN] [34] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: I-frame image extraction failed, will attempt standard way. Input: "file:\"/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E01 WEB-DL 1080p x264 DUAL 5.1.mkv\""
+MediaBrowser.Common.FfmpegException: ffmpeg image extraction timed out for file:"/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E01 WEB-DL 1080p x264 DUAL 5.1.mkv" after 10000ms
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Diagnostics.Process.WaitForExitAsync(CancellationToken cancellationToken)
+   at MediaBrowser.Common.Extensions.ProcessExtensions.WaitForExitAsync(Process process, TimeSpan timeout)
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImageInternal(String inputPath, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, Nullable`1 threedFormat, Nullable`1 offset, Boolean useIFrame, Nullable`1 targetFormat, Boolean isAudio, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImageInternal(String inputPath, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, Nullable`1 threedFormat, Nullable`1 offset, Boolean useIFrame, Nullable`1 targetFormat, Boolean isAudio, CancellationToken cancellationToken)
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImage(String inputFile, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, MediaSourceInfo mediaSource, Boolean isAudio, Nullable`1 threedFormat, Nullable`1 offset, Nullable`1 targetFormat, CancellationToken cancellationToken)
+[2026-10-01 03:45:20.351 -03:00] [INF] [27] MediaBrowser.Controller.MediaEncoding.TranscodingJob: Stopping ffmpeg process with q command for "/cache/transcodes/774dbbe9058c43e293064ddeeae78ad7.m3u8"
+[2026-10-01 03:45:20.846 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: FFmpeg exited with code 0
+[2026-10-01 03:45:20.853 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: Deleting partial stream file(s) "/cache/transcodes/774dbbe9058c43e293064ddeeae78ad7.m3u8"
+[2026-10-01 03:45:21.853 -03:00] [ERR] [36] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E01 WEB-DL 1080p x264 DUAL 5.1-thumb.jpg". Will retry saving to "/config/metadata/library/f9/f98955b54b765ddc5c59249b795faa18/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E01 WEB-DL 1080p x264 DUAL 5.1-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:45:22.517 -03:00] [INF] [36] Emby.Server.Implementations.Session.SessionManager: User "Petterson" stopped playback of '"S01E01 - TORRENTDOSFILMES"' at "21654"ms ("Jellyfin Web" "12.1.0")
+[2026-10-01 03:45:23.507 -03:00] [INF] [36] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E02 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E02 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:45:27.203 -03:00] [INF] [36] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E02 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E02 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:45:31.319 -03:00] [INF] [27] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E02 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E02 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:45:36.020 -03:00] [INF] [41] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E02 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E02 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:45:40.698 -03:00] [INF] [36] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E02 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E02 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:45:50.451 -03:00] [ERR] [27] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E02 WEB-DL 1080p x264 DUAL 5.1-thumb.jpg". Will retry saving to "/config/metadata/library/f2/f2ca92e950487e8b24d46d21ba701296/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E02 WEB-DL 1080p x264 DUAL 5.1-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:45:51.498 -03:00] [INF] [33] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E03 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E03 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:45:54.594 -03:00] [INF] [33] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E03 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E03 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:45:58.002 -03:00] [INF] [33] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E03 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E03 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:46:00.975 -03:00] [INF] [33] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E03 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E03 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:46:06.014 -03:00] [INF] [27] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E03 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E03 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:46:16.671 -03:00] [ERR] [27] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E03 WEB-DL 1080p x264 DUAL 5.1-thumb.jpg". Will retry saving to "/config/metadata/library/6c/6c78d3816da579cc3d29606024644e3f/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E03 WEB-DL 1080p x264 DUAL 5.1-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:46:18.030 -03:00] [INF] [27] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E04 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E04 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:46:21.260 -03:00] [INF] [33] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E04 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E04 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:46:24.945 -03:00] [INF] [41] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E04 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E04 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:46:28.243 -03:00] [INF] [41] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E04 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E04 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:46:33.632 -03:00] [INF] [27] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E04 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E04 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:46:39.816 -03:00] [ERR] [24] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E04 WEB-DL 1080p x264 DUAL 5.1-thumb.jpg". Will retry saving to "/config/metadata/library/67/674b9ede90a8937a02b8227a12d8b1b3/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E04 WEB-DL 1080p x264 DUAL 5.1-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:46:41.683 -03:00] [INF] [24] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E05 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E05 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:46:44.057 -03:00] [INF] [24] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E05 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E05 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:46:50.596 -03:00] [INF] [33] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E05 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E05 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:46:56.026 -03:00] [INF] [41] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E05 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E05 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:46:58.555 -03:00] [INF] [41] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E05 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E05 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:47:05.119 -03:00] [ERR] [41] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E05 WEB-DL 1080p x264 DUAL 5.1-thumb.jpg". Will retry saving to "/config/metadata/library/a9/a98c4da6dcc6cca4f03afd5be20c5829/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E05 WEB-DL 1080p x264 DUAL 5.1-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:47:06.173 -03:00] [INF] [27] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E06 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E06 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:47:08.619 -03:00] [INF] [41] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E06 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E06 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:47:11.637 -03:00] [INF] [41] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E06 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E06 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:47:14.659 -03:00] [INF] [41] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E06 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E06 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:47:17.083 -03:00] [INF] [41] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E06 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E06 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:47:23.089 -03:00] [WRN] [41] Emby.Server.Implementations.HttpServer.WebSocketConnection: WS "192.168.1.9" error receiving data: "The remote party closed the WebSocket connection without completing the close handshake."
+[2026-10-01 03:47:23.135 -03:00] [INF] [41] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "192.168.1.9" closed
+[2026-10-01 03:47:24.153 -03:00] [ERR] [33] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E06 WEB-DL 1080p x264 DUAL 5.1-thumb.jpg". Will retry saving to "/config/metadata/library/4a/4a6a261ff17ff34b0da263d2d594c028/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E06 WEB-DL 1080p x264 DUAL 5.1-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:47:24.261 -03:00] [INF] [41] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "192.168.1.9" request
+[2026-10-01 03:47:24.991 -03:00] [INF] [27] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E07 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E07 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:47:27.464 -03:00] [INF] [27] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E07 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E07 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:47:31.836 -03:00] [INF] [33] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E07 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E07 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:47:39.236 -03:00] [INF] [41] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E07 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E07 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:47:48.529 -03:00] [INF] [33] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E07 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E07 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:47:54.834 -03:00] [INF] [41] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Trickplay process unresponsive.
+[2026-10-01 03:47:54.834 -03:00] [INF] [41] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Stopping trickplay extraction.
+[2026-10-01 03:47:55.836 -03:00] [INF] [41] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Killing ffmpeg process
+[2026-10-01 03:47:56.122 -03:00] [ERR] [41] Jellyfin.Server.Implementations.Trickplay.TrickplayManager: Error creating trickplay images.
+MediaBrowser.Common.FfmpegException: ffmpeg image extraction failed for /usr/lib/jellyfin-ffmpeg/ffmpeg -loglevel error -threads 1 -i file:"/media/Filmes/Aposta de Alto Risco 2026/Aposta de Alto Risco 2026.mkv" -map 0:0 -an -sn -vf "setpts=N/23.976/TB,fps=0.10000000149011612,setparams=color_primaries=bt709:color_trc=bt709:colorspace=bt709,scale=trunc(min(max(iw\,ih*(a*sar))\,320)/2)*2:trunc(ow/(a*sar)/2)*2,format=yuv420p" -threads 1 -c:v mjpeg -qscale:v 4 -fps_mode passthrough -f image2 "/tmp/jellyfin/6b09a23579f64084aa048fc6914dba0f/%08d.jpg"
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractVideoImagesOnIntervalInternal(String inputArg, String filterParam, String vidEncoder, Nullable`1 outputThreads, Nullable`1 qualityScale, Nullable`1 priority, CancellationToken cancellationToken)
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractVideoImagesOnIntervalAccelerated(String inputFile, String container, MediaSourceInfo mediaSource, MediaStream imageStream, Int32 maxWidth, TimeSpan interval, Boolean allowHwAccel, Boolean enableHwEncoding, Nullable`1 threads, Nullable`1 qualityScale, Nullable`1 priority, Boolean enableKeyFrameOnlyExtraction, EncodingHelper encodingHelper, CancellationToken cancellationToken)
+   at Jellyfin.Server.Implementations.Trickplay.TrickplayManager.RefreshTrickplayDataInternal(Video video, Boolean replace, Int32 width, TrickplayOptions options, Boolean saveWithMedia, CancellationToken cancellationToken)
+[2026-10-01 03:47:56.537 -03:00] [INF] [27] Jellyfin.Server.Implementations.Trickplay.TrickplayManager: Creating trickplay files at 320 width, for "/media/Filmes/Corra Que a Polícia Vem Aí 2025/Corra Que a Polícia Vem Aí 2025.mkv" [ID: 424d418d-e38e-525f-5532-174f33460bce]
+[2026-10-01 03:47:56.570 -03:00] [INF] [27] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Trickplay generation: "/usr/lib/jellyfin-ffmpeg/ffmpeg -loglevel error -threads 1 -i file:\"/media/Filmes/Corra Que a Polícia Vem Aí 2025/Corra Que a Polícia Vem Aí 2025.mkv\" -map 0:0 -an -sn -vf \"setpts=N/23.976/TB,fps=0.10000000149011612,setparams=color_primaries=bt709:color_trc=bt709:colorspace=bt709,scale=trunc(min(max(iw\,ih*(a*sar))\,320)/2)*2:trunc(ow/(a*sar)/2)*2,format=yuv420p\" -threads 1 -c:v mjpeg -qscale:v 4 -fps_mode passthrough -f image2 \"/tmp/jellyfin/180db089f6f8470ea321832d1051f88c/%08d.jpg\""
+[2026-10-01 03:47:58.571 -03:00] [WRN] [27] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: I-frame image extraction failed, will attempt standard way. Input: "file:\"/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E07 WEB-DL 1080p x264 DUAL 5.1.mkv\""
+MediaBrowser.Common.FfmpegException: ffmpeg image extraction timed out for file:"/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E07 WEB-DL 1080p x264 DUAL 5.1.mkv" after 10000ms
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Diagnostics.Process.WaitForExitAsync(CancellationToken cancellationToken)
+   at MediaBrowser.Common.Extensions.ProcessExtensions.WaitForExitAsync(Process process, TimeSpan timeout)
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImageInternal(String inputPath, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, Nullable`1 threedFormat, Nullable`1 offset, Boolean useIFrame, Nullable`1 targetFormat, Boolean isAudio, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImageInternal(String inputPath, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, Nullable`1 threedFormat, Nullable`1 offset, Boolean useIFrame, Nullable`1 targetFormat, Boolean isAudio, CancellationToken cancellationToken)
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImage(String inputFile, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, MediaSourceInfo mediaSource, Boolean isAudio, Nullable`1 threedFormat, Nullable`1 offset, Nullable`1 targetFormat, CancellationToken cancellationToken)
+[2026-10-01 03:48:08.731 -03:00] [ERR] [27] Emby.Server.Implementations.Chapters.ChapterManager: Error extracting chapter images for "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E07 WEB-DL 1080p x264 DUAL 5.1.mkv"
+MediaBrowser.Common.FfmpegException: ffmpeg image extraction timed out for file:"/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E07 WEB-DL 1080p x264 DUAL 5.1.mkv" after 10000ms
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Diagnostics.Process.WaitForExitAsync(CancellationToken cancellationToken)
+   at MediaBrowser.Common.Extensions.ProcessExtensions.WaitForExitAsync(Process process, TimeSpan timeout)
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImageInternal(String inputPath, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, Nullable`1 threedFormat, Nullable`1 offset, Boolean useIFrame, Nullable`1 targetFormat, Boolean isAudio, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImageInternal(String inputPath, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, Nullable`1 threedFormat, Nullable`1 offset, Boolean useIFrame, Nullable`1 targetFormat, Boolean isAudio, CancellationToken cancellationToken)
+   at MediaBrowser.MediaEncoding.Encoder.MediaEncoder.ExtractImage(String inputFile, String container, MediaStream videoStream, Nullable`1 imageStreamIndex, MediaSourceInfo mediaSource, Boolean isAudio, Nullable`1 threedFormat, Nullable`1 offset, Nullable`1 targetFormat, CancellationToken cancellationToken)
+   at Emby.Server.Implementations.Chapters.ChapterManager.RefreshChapterImages(Video video, IDirectoryService directoryService, IReadOnlyList`1 chapters, Boolean extractImages, Boolean saveChapters, CancellationToken cancellationToken)
+[2026-10-01 03:48:18.156 -03:00] [ERR] [33] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E07 WEB-DL 1080p x264 DUAL 5.1-thumb.jpg". Will retry saving to "/config/metadata/library/70/70b1573bd09f6ecd60fac3d3d5601279/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E07 WEB-DL 1080p x264 DUAL 5.1-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:48:22.452 -03:00] [INF] [25] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E08 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E08 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:48:27.492 -03:00] [INF] [41] Emby.Server.Implementations.Session.SessionWebSocketListener: Lost 1 WebSockets.
+[2026-10-01 03:48:28.560 -03:00] [INF] [41] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E08 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E08 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:48:35.766 -03:00] [INF] [25] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E08 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E08 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:48:44.572 -03:00] [INF] [25] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E08 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E08 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:48:52.749 -03:00] [INF] [37] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E08 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E08 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:49:04.011 -03:00] [ERR] [25] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E08 WEB-DL 1080p x264 DUAL 5.1-thumb.jpg". Will retry saving to "/config/metadata/library/58/58c4dd96dd24d1c04b6b03e31f41a532/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E08 WEB-DL 1080p x264 DUAL 5.1-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:49:05.057 -03:00] [INF] [25] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E09 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E09 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:49:10.324 -03:00] [INF] [25] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E09 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E09 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:49:16.785 -03:00] [INF] [37] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E09 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E09 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:49:22.222 -03:00] [INF] [25] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E09 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E09 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:49:25.719 -03:00] [INF] [41] Emby.Server.Implementations.Chapters.ChapterManager: Extracting chapter image for "S02E09 - TORRENTDOSFILMES" at "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E09 WEB-DL 1080p x264 DUAL 5.1.mkv"
+[2026-10-01 03:49:34.694 -03:00] [ERR] [39] MediaBrowser.Providers.Manager.ProviderManager: IOException saving to "/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E09 WEB-DL 1080p x264 DUAL 5.1-thumb.jpg". Will retry saving to "/config/metadata/library/3c/3c6b186da994aa8228c9944995e61cca/poster.jpg"
+System.IO.IOException: Read-only file system : '/media/Series/X-Men '97 2ª Temporada/X-Men '97 S02E09 WEB-DL 1080p x264 DUAL 5.1-thumb.jpg'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileStreamOptions options)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.ImageSaver.SaveImageToLocation(Stream source, String path, String retryPath, CancellationToken cancellationToken)
+[2026-10-01 03:49:34.958 -03:00] [INF] [25] Emby.Server.Implementations.Library.LibraryManager: Running 8 post-scan task(s)
+[2026-10-01 03:49:34.962 -03:00] [INF] [25] Emby.Server.Implementations.Library.LibraryManager: Running post-scan task 1/8: "SplashscreenPostScanTask"
+[2026-10-01 03:50:07.314 -03:00] [INF] [25] Emby.Server.Implementations.Library.LibraryManager: Post-scan task "SplashscreenPostScanTask" completed after 0 minute(s) and 32 seconds
+[2026-10-01 03:50:07.314 -03:00] [INF] [25] Emby.Server.Implementations.Library.LibraryManager: Running post-scan task 2/8: "ArtistsPostScanTask"
+[2026-10-01 03:50:07.498 -03:00] [INF] [25] Emby.Server.Implementations.Library.Validators.ArtistsValidator: Refreshed metadata for 0 new artists out of 0 total
+[2026-10-01 03:50:07.780 -03:00] [INF] [25] Emby.Server.Implementations.Library.LibraryManager: Post-scan task "ArtistsPostScanTask" completed after 0 minute(s) and 0 seconds
+[2026-10-01 03:50:07.780 -03:00] [INF] [25] Emby.Server.Implementations.Library.LibraryManager: Running post-scan task 3/8: "CollectionPosterVerifyPostScanTask"
+[2026-10-01 03:50:09.602 -03:00] [INF] [37] Emby.Server.Implementations.Library.LibraryManager: Post-scan task "CollectionPosterVerifyPostScanTask" completed after 0 minute(s) and 1 seconds
+[2026-10-01 03:50:09.602 -03:00] [INF] [37] Emby.Server.Implementations.Library.LibraryManager: Running post-scan task 4/8: "CollectionPostScanTask"
+[2026-10-01 03:50:10.339 -03:00] [INF] [37] Emby.Server.Implementations.Library.LibraryManager: Post-scan task "CollectionPostScanTask" completed after 0 minute(s) and 0 seconds
+[2026-10-01 03:50:10.340 -03:00] [INF] [37] Emby.Server.Implementations.Library.LibraryManager: Running post-scan task 5/8: "GenresPostScanTask"
+[2026-10-01 03:50:19.337 -03:00] [INF] [39] Emby.Server.Implementations.Library.Validators.GenresValidator: Refreshed metadata for 5 new genres out of 5 total
+[2026-10-01 03:50:19.608 -03:00] [INF] [39] Emby.Server.Implementations.Library.LibraryManager: Post-scan task "GenresPostScanTask" completed after 0 minute(s) and 9 seconds
+[2026-10-01 03:50:19.608 -03:00] [INF] [39] Emby.Server.Implementations.Library.LibraryManager: Running post-scan task 6/8: "MusicGenresPostScanTask"
+[2026-10-01 03:50:19.634 -03:00] [INF] [39] Emby.Server.Implementations.Library.Validators.MusicGenresValidator: Refreshed metadata for 0 new music genres out of 0 total
+[2026-10-01 03:50:19.635 -03:00] [INF] [39] Emby.Server.Implementations.Library.LibraryManager: Post-scan task "MusicGenresPostScanTask" completed after 0 minute(s) and 0 seconds
+[2026-10-01 03:50:19.635 -03:00] [INF] [39] Emby.Server.Implementations.Library.LibraryManager: Running post-scan task 7/8: "StudiosPostScanTask"
+[2026-10-01 03:50:21.988 -03:00] [INF] [39] Emby.Server.Implementations.Library.Validators.StudiosValidator: Refreshed metadata for 9 new studios out of 9 total
+[2026-10-01 03:50:22.239 -03:00] [INF] [39] Emby.Server.Implementations.Library.LibraryManager: Post-scan task "StudiosPostScanTask" completed after 0 minute(s) and 2 seconds
+[2026-10-01 03:50:22.240 -03:00] [INF] [39] Emby.Server.Implementations.Library.LibraryManager: Running post-scan task 8/8: "CleanDatabaseScheduledTask"
+[2026-10-01 03:50:22.286 -03:00] [INF] [39] Emby.Server.Implementations.Library.LibraryManager: Post-scan task "CleanDatabaseScheduledTask" completed after 0 minute(s) and 0 seconds
+[2026-10-01 03:50:22.287 -03:00] [INF] [39] Emby.Server.Implementations.Library.LibraryManager: All post-scan tasks completed after 0 minute(s) and 47 seconds
+[2026-10-01 03:50:22.318 -03:00] [INF] [39] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Escanear a Biblioteca de Mídia" Completed after 12 minute(s) and 15 seconds
+[2026-10-01 03:50:22.320 -03:00] [INF] [34] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/media/Filmes"
+[2026-10-01 03:50:22.424 -03:00] [INF] [25] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/media/Series"
